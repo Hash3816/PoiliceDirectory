@@ -35,7 +35,7 @@ bool Date::operator>=(const Date& other) const {
     return (*this == other) || (*this > other);
 }
 std::ostream& operator<<(std::ostream& os, const Date& date) {
-    os << date.year << " " << month_to_string(date.month) << " " << date.day;
+    os << date.day << " " << month_to_string(date.month) << " " << date.year;
     return os;
 }
 

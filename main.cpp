@@ -1,5 +1,6 @@
 #include <Windows.h>
-#include "reportdirectory.h"
+#include "report_directory.h"
+#include "investigation_directory.h"
 #include "DataService.h"
 #include <QApplication>
 void prepare_ui(const QApplication& a){
@@ -37,11 +38,15 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     prepare_ui(a);
 
-    std::cout << "Если тут не египетские иероглифы то консоль работает";
     DataService& data_service = DataService::get_instance();
+    InvestigationDirectory window2;
     ReportDirectory window;
+    window.ptr_investigation_directory = &window2; //Привязываем ссылку 2 окна для обновлений
+
     window.setWindowTitle("Справочник заявлений");
+    window2.setWindowTitle("Справочник следствий");
     window.show();
+    window2.show();
     return QApplication::exec();
 }
 

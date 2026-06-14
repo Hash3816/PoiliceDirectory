@@ -25,18 +25,22 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
 
 
-        reportdirectory.h reportdirectory.cpp reportdirectory.ui
+        report_directory.h report_directory.cpp report_directory.ui
         hash_table/DataManagerHashTable.h hash_table/hash_table.h hash_table/IHashTableIndex.h hash_table/IHashTableManager.h tree/DataManagerTree.h tree/I_tree.h tree/IDataManagerTree.h tree/rb_tree.h
         DataService.h DynamicArray.h
-        IStorage.h list.h Pair.h reportdirectory.h structures.h
+        IStorage.h list.h Pair.h report_directory.h structures.h
         structures.cpp
-        reporttablemodel.h
-        reporttablemodel.cpp
-        inputreportdialog.h inputreportdialog.cpp inputreportdialog.ui
-        windowshowstructures.h windowshowstructures.cpp windowshowstructures.ui
+        report_table_model.h
+        report_table_model.cpp
+        input_report_dialog.h input_report_dialog.cpp input_report_dialog.ui
+        window_show_structures.h window_show_structures.cpp window_show_structures.ui
         validate_structures.h
         validate_stuctures.cpp
-        showtableview.h showtableview.cpp showtableview.ui
+        show_table_view.h show_table_view.cpp show_table_view.ui
+        investigation_directory.h investigation_directory.cpp investigation_directory.ui
+        investigation_table_model.h
+        investigation_table_model.cpp
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET course APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
