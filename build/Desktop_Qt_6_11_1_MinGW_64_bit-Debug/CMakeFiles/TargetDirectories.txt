@@ -1,9 +1,0 @@
-D:/ACID/dz_4/course/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/CMakeFiles/course.dir
-D:/ACID/dz_4/course/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
-D:/ACID/dz_4/course/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
-D:/ACID/dz_4/course/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
-D:/ACID/dz_4/course/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/CMakeFiles/install.dir
-D:/ACID/dz_4/course/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
-D:/ACID/dz_4/course/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
-D:/ACID/dz_4/course/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/CMakeFiles/course_autogen_timestamp_deps.dir
-D:/ACID/dz_4/course/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/CMakeFiles/course_autogen.dir
