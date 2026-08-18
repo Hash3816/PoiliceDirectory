@@ -1,3 +1,0 @@
-D:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f CMakeFiles\course.dir/objects.a
-D:\Qt\Tools\mingw1310_64\bin\ar.exe qc CMakeFiles\course.dir/objects.a @CMakeFiles\course.dir\objects1.rsp
-D:\Qt\Tools\mingw1310_64\bin\g++.exe -g -mwindows -Wl,--whole-archive CMakeFiles\course.dir/objects.a -Wl,--no-whole-archive -o course.exe -Wl,--out-implib,libcourse.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\course.dir\linkLibs.rsp
