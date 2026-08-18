@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InputInvestigationDialog</class>
+ <widget class="QDialog" name="InputInvestigationDialog">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>599</width>
+    <height>407</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>40</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>407</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>776</width>
+    <height>505</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_5">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>698</width>
+             <height>39</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    padding-left: 10px;   /* Отступ слева от края окна */
+    padding-top: 10px;    /* Отступ сверху от Toolbar */
+    padding-bottom: 5px;  /* Отступ снизу до таблицы */
+}</string>
+           </property>
+           <property name="text">
+            <string>Следствие</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>252</height>
+            </size>
+           </property>
+           <layout class="QFormLayout" name="formLayout">
+            <item row="0" column="0">
+             <widget class="QFrame" name="frame">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <property name="spacing">
+                <number>8</number>
+               </property>
+               <property name="sizeConstraint">
+                <enum>QLayout::SizeConstraint::SetNoConstraint</enum>
+               </property>
+               <item>
+                <widget class="QLabel" name="label">
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Номер заявления</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_2">
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Фамилия</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_3">
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Имя</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_4">
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Отчество</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_5">
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Статус</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_6">
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Дата возбуждения</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QFrame" name="frame">
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <property name="spacing">
+                <number>8</number>
+               </property>
+               <item>
+                <widget class="QLineEdit" name="NumberReportEditLine">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    color: #000000; /* Цвет обычного текста */
+}
+QLineEdit[text=&quot;&quot;] {
+    /* Альтернативный хак для старых версий, если не работает палитра */
+}
+/* Для новых версий Qt */
+QLineEdit::placeholder {
+    color: #888888; /* Сделайте его явно серым/видимым */
+}</string>
+                 </property>
+                 <property name="maxLength">
+                  <number>4</number>
+                 </property>
+                 <property name="placeholderText">
+                  <string comment="1-1000">Число от 1 до 9999</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="SurnameEditLine">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    color: #000000; /* Цвет обычного текста */
+}
+QLineEdit[text=&quot;&quot;] {
+    /* Альтернативный хак для старых версий, если не работает палитра */
+}
+/* Для новых версий Qt */
+QLineEdit::placeholder {
+    color: #888888; /* Сделайте его явно серым/видимым */
+}</string>
+                 </property>
+                 <property name="maxLength">
+                  <number>50</number>
+                 </property>
+                 <property name="placeholderText">
+                  <string comment="Иванов">Иванов</string>
+                 </property>
+                 <property name="clearButtonEnabled">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="NameEditLine">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    color: #000000; /* Цвет обычного текста */
+}
+QLineEdit[text=&quot;&quot;] {
+    /* Альтернативный хак для старых версий, если не работает палитра */
+}
+/* Для новых версий Qt */
+QLineEdit::placeholder {
+    color: #888888; /* Сделайте его явно серым/видимым */
+}</string>
+                 </property>
+                 <property name="maxLength">
+                  <number>50</number>
+                 </property>
+                 <property name="placeholderText">
+                  <string comment="Иван">Иван</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="PatronymicEditLine">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    color: #000000; /* Цвет обычного текста */
+}
+QLineEdit[text=&quot;&quot;] {
+    /* Альтернативный хак для старых версий, если не работает палитра */
+}
+/* Для новых версий Qt */
+QLineEdit::placeholder {
+    color: #888888; /* Сделайте его явно серым/видимым */
+}</string>
+                 </property>
+                 <property name="maxLength">
+                  <number>50</number>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Иванович</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="StatusBox">
+                 <item>
+                  <property name="text">
+                   <string>Возбуждено</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Приостановлено</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>На рассмотрении</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Закрыто</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="DateLineEdit">
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+    color: #000000; /* Цвет обычного текста */
+}
+QLineEdit[text=&quot;&quot;] {
+    /* Альтернативный хак для старых версий, если не работает палитра */
+}
+/* Для новых версий Qt */
+QLineEdit::placeholder {
+    color: #888888; /* Сделайте его явно серым/видимым */
+}</string>
+                 </property>
+                 <property name="maxLength">
+                  <number>11</number>
+                 </property>
+                 <property name="placeholderText">
+                  <string>01 янв 2026</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>68</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>68</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <property name="spacing">
+          <number>15</number>
+         </property>
+         <property name="sizeConstraint">
+          <enum>QLayout::SizeConstraint::SetMinimumSize</enum>
+         </property>
+         <property name="leftMargin">
+          <number>15</number>
+         </property>
+         <property name="topMargin">
+          <number>15</number>
+         </property>
+         <property name="rightMargin">
+          <number>15</number>
+         </property>
+         <property name="bottomMargin">
+          <number>15</number>
+         </property>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="AddInvestigationButton">
+           <property name="text">
+            <string>Добавить</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="CanelButton">
+           <property name="text">
+            <string>Отмена</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -5,10 +5,10 @@
 #include "../IStorage.h"
 #include "../structures.h"
 
-// Вместо PoliceReport подставить структуру заявления(когда сделаю)
+
 //Key - unsigned int номер заявления в предметной задаче
 //Value - unsigned int - индекс в массиве
-class DataManagerHashTable :public IDataManager<PoliceReport, unsigned int, unsigned int> {
+class DataManagerHashTable :public IHashTableManager<PoliceReport, unsigned int, unsigned int> {
 private:
     InterfaceStorage<PoliceReport>* storage_info;
     IHashTableIndex<unsigned int, unsigned int>* hash_table;
@@ -28,20 +28,23 @@ public:
     }
 
     void append(const PoliceReport& info) override{
-        hash_table->insert(info.report_number, storage_info->get_size());
+        if(hash_table->find(info.report_number).first){// Количество шагов поиска, если объекта с ключом нет в хт то выведет 0
+            throw std::runtime_error("Невозможно вставить дубликат.");
+        }
+
         storage_info->push_back(info);
+        hash_table->insert(info.report_number, storage_info->get_size() - 1);
 	}
 
     void erase(const PoliceReport& info, const unsigned int& index) override {
         if (index < 0 || index > storage_info->get_size() - 1) {
-			throw std::runtime_error("index out of range");
+            throw std::runtime_error("Индекс находится за пределами массива.");
 		}
         if (storage_info->get_element(index) != info) {
-            throw std::runtime_error("invalid index");
+            throw std::runtime_error("Неверный индекс.");
 		}
 
         hash_table->erase(info.report_number, index);
-        //
         if (index != storage_info->get_size() - 1) {
             PoliceReport last_info_in_array = storage_info->get_element(storage_info->get_size() - 1);
             storage_info->change(last_info_in_array,index);
@@ -61,19 +64,19 @@ public:
         return Pair<unsigned int, const PoliceReport&>(pair_index.first, storage_info->get_element(pair_index.second));
 	}
 
-    //Возможно Изменить на XML
+    //Работает только если действительно по всем заявлениям существуют следствия в файле
 	void load_data_from_file(const std::string& path) override {
 		std::ifstream input;
 
 		input.open(path);
 		if (!input.is_open()) {
-			throw std::runtime_error("cannot open file");
+            throw std::runtime_error("Ошибка при открытии файла.");
 		}
        
 		int number_rows;
 		input >> number_rows;
         if(input.fail()){
-            throw std::runtime_error("invalid number rows");
+            throw std::runtime_error("Файл повреждён.");
         }
 		input.get();
 		std::string info_user_s;
@@ -87,7 +90,7 @@ public:
 	void write_index_structure_in_file(const std::string& path) const override{
 		std::ofstream output(path);
 		if (!output.is_open()) {
-			throw std::runtime_error("cannot open(create) file");
+            throw std::runtime_error("Невозможно открыть(создать) файл.");
 		}
         output << hash_table->to_str();
 		output.close();
@@ -96,7 +99,7 @@ public:
 	void write_storage_in_file(const std::string& path)const  override {
 		std::ofstream output(path);
 		if (!output.is_open()) {
-			throw std::runtime_error("cannot open(create) file");
+            throw std::runtime_error("Невозможно открыть(создать) файл");
 		}
         output << storage_info->get_size() << "\n";
         output << storage_info->to_str();
@@ -125,6 +128,10 @@ public:
 
     std::string storage_to_string() const{
         return storage_info->to_str();
+    }
+
+    unsigned int get_hash(const unsigned int& key) const override{
+        return hash_table->get_hash(key);
     }
 
     void clear() override{

@@ -223,53 +223,125 @@ course_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/course_autogen/mocs_compilation.cpp.s
 .PHONY : course_autogen/mocs_compilation.cpp.s
 
-inputreportdialog.obj: inputreportdialog.cpp.obj
-.PHONY : inputreportdialog.obj
+filter_dialog.obj: filter_dialog.cpp.obj
+.PHONY : filter_dialog.obj
 
 # target to build an object file
-inputreportdialog.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/inputreportdialog.cpp.obj
-.PHONY : inputreportdialog.cpp.obj
+filter_dialog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/filter_dialog.cpp.obj
+.PHONY : filter_dialog.cpp.obj
 
-inputreportdialog.i: inputreportdialog.cpp.i
-.PHONY : inputreportdialog.i
+filter_dialog.i: filter_dialog.cpp.i
+.PHONY : filter_dialog.i
 
 # target to preprocess a source file
-inputreportdialog.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/inputreportdialog.cpp.i
-.PHONY : inputreportdialog.cpp.i
+filter_dialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/filter_dialog.cpp.i
+.PHONY : filter_dialog.cpp.i
 
-inputreportdialog.s: inputreportdialog.cpp.s
-.PHONY : inputreportdialog.s
+filter_dialog.s: filter_dialog.cpp.s
+.PHONY : filter_dialog.s
 
 # target to generate assembly for a file
-inputreportdialog.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/inputreportdialog.cpp.s
-.PHONY : inputreportdialog.cpp.s
+filter_dialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/filter_dialog.cpp.s
+.PHONY : filter_dialog.cpp.s
 
-investigationdirectory.obj: investigationdirectory.cpp.obj
-.PHONY : investigationdirectory.obj
+input_investigation_dialog.obj: input_investigation_dialog.cpp.obj
+.PHONY : input_investigation_dialog.obj
 
 # target to build an object file
-investigationdirectory.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/investigationdirectory.cpp.obj
-.PHONY : investigationdirectory.cpp.obj
+input_investigation_dialog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/input_investigation_dialog.cpp.obj
+.PHONY : input_investigation_dialog.cpp.obj
 
-investigationdirectory.i: investigationdirectory.cpp.i
-.PHONY : investigationdirectory.i
+input_investigation_dialog.i: input_investigation_dialog.cpp.i
+.PHONY : input_investigation_dialog.i
 
 # target to preprocess a source file
-investigationdirectory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/investigationdirectory.cpp.i
-.PHONY : investigationdirectory.cpp.i
+input_investigation_dialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/input_investigation_dialog.cpp.i
+.PHONY : input_investigation_dialog.cpp.i
 
-investigationdirectory.s: investigationdirectory.cpp.s
-.PHONY : investigationdirectory.s
+input_investigation_dialog.s: input_investigation_dialog.cpp.s
+.PHONY : input_investigation_dialog.s
 
 # target to generate assembly for a file
-investigationdirectory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/investigationdirectory.cpp.s
-.PHONY : investigationdirectory.cpp.s
+input_investigation_dialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/input_investigation_dialog.cpp.s
+.PHONY : input_investigation_dialog.cpp.s
+
+input_report_dialog.obj: input_report_dialog.cpp.obj
+.PHONY : input_report_dialog.obj
+
+# target to build an object file
+input_report_dialog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/input_report_dialog.cpp.obj
+.PHONY : input_report_dialog.cpp.obj
+
+input_report_dialog.i: input_report_dialog.cpp.i
+.PHONY : input_report_dialog.i
+
+# target to preprocess a source file
+input_report_dialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/input_report_dialog.cpp.i
+.PHONY : input_report_dialog.cpp.i
+
+input_report_dialog.s: input_report_dialog.cpp.s
+.PHONY : input_report_dialog.s
+
+# target to generate assembly for a file
+input_report_dialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/input_report_dialog.cpp.s
+.PHONY : input_report_dialog.cpp.s
+
+investigation_directory.obj: investigation_directory.cpp.obj
+.PHONY : investigation_directory.obj
+
+# target to build an object file
+investigation_directory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/investigation_directory.cpp.obj
+.PHONY : investigation_directory.cpp.obj
+
+investigation_directory.i: investigation_directory.cpp.i
+.PHONY : investigation_directory.i
+
+# target to preprocess a source file
+investigation_directory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/investigation_directory.cpp.i
+.PHONY : investigation_directory.cpp.i
+
+investigation_directory.s: investigation_directory.cpp.s
+.PHONY : investigation_directory.s
+
+# target to generate assembly for a file
+investigation_directory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/investigation_directory.cpp.s
+.PHONY : investigation_directory.cpp.s
+
+investigation_table_model.obj: investigation_table_model.cpp.obj
+.PHONY : investigation_table_model.obj
+
+# target to build an object file
+investigation_table_model.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/investigation_table_model.cpp.obj
+.PHONY : investigation_table_model.cpp.obj
+
+investigation_table_model.i: investigation_table_model.cpp.i
+.PHONY : investigation_table_model.i
+
+# target to preprocess a source file
+investigation_table_model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/investigation_table_model.cpp.i
+.PHONY : investigation_table_model.cpp.i
+
+investigation_table_model.s: investigation_table_model.cpp.s
+.PHONY : investigation_table_model.s
+
+# target to generate assembly for a file
+investigation_table_model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/investigation_table_model.cpp.s
+.PHONY : investigation_table_model.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -295,77 +367,77 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-reportdirectory.obj: reportdirectory.cpp.obj
-.PHONY : reportdirectory.obj
+report_directory.obj: report_directory.cpp.obj
+.PHONY : report_directory.obj
 
 # target to build an object file
-reportdirectory.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/reportdirectory.cpp.obj
-.PHONY : reportdirectory.cpp.obj
+report_directory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/report_directory.cpp.obj
+.PHONY : report_directory.cpp.obj
 
-reportdirectory.i: reportdirectory.cpp.i
-.PHONY : reportdirectory.i
+report_directory.i: report_directory.cpp.i
+.PHONY : report_directory.i
 
 # target to preprocess a source file
-reportdirectory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/reportdirectory.cpp.i
-.PHONY : reportdirectory.cpp.i
+report_directory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/report_directory.cpp.i
+.PHONY : report_directory.cpp.i
 
-reportdirectory.s: reportdirectory.cpp.s
-.PHONY : reportdirectory.s
+report_directory.s: report_directory.cpp.s
+.PHONY : report_directory.s
 
 # target to generate assembly for a file
-reportdirectory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/reportdirectory.cpp.s
-.PHONY : reportdirectory.cpp.s
+report_directory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/report_directory.cpp.s
+.PHONY : report_directory.cpp.s
 
-reporttablemodel.obj: reporttablemodel.cpp.obj
-.PHONY : reporttablemodel.obj
+report_table_model.obj: report_table_model.cpp.obj
+.PHONY : report_table_model.obj
 
 # target to build an object file
-reporttablemodel.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/reporttablemodel.cpp.obj
-.PHONY : reporttablemodel.cpp.obj
+report_table_model.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/report_table_model.cpp.obj
+.PHONY : report_table_model.cpp.obj
 
-reporttablemodel.i: reporttablemodel.cpp.i
-.PHONY : reporttablemodel.i
+report_table_model.i: report_table_model.cpp.i
+.PHONY : report_table_model.i
 
 # target to preprocess a source file
-reporttablemodel.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/reporttablemodel.cpp.i
-.PHONY : reporttablemodel.cpp.i
+report_table_model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/report_table_model.cpp.i
+.PHONY : report_table_model.cpp.i
 
-reporttablemodel.s: reporttablemodel.cpp.s
-.PHONY : reporttablemodel.s
+report_table_model.s: report_table_model.cpp.s
+.PHONY : report_table_model.s
 
 # target to generate assembly for a file
-reporttablemodel.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/reporttablemodel.cpp.s
-.PHONY : reporttablemodel.cpp.s
+report_table_model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/report_table_model.cpp.s
+.PHONY : report_table_model.cpp.s
 
-showtableview.obj: showtableview.cpp.obj
-.PHONY : showtableview.obj
+show_table_view.obj: show_table_view.cpp.obj
+.PHONY : show_table_view.obj
 
 # target to build an object file
-showtableview.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/showtableview.cpp.obj
-.PHONY : showtableview.cpp.obj
+show_table_view.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/show_table_view.cpp.obj
+.PHONY : show_table_view.cpp.obj
 
-showtableview.i: showtableview.cpp.i
-.PHONY : showtableview.i
+show_table_view.i: show_table_view.cpp.i
+.PHONY : show_table_view.i
 
 # target to preprocess a source file
-showtableview.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/showtableview.cpp.i
-.PHONY : showtableview.cpp.i
+show_table_view.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/show_table_view.cpp.i
+.PHONY : show_table_view.cpp.i
 
-showtableview.s: showtableview.cpp.s
-.PHONY : showtableview.s
+show_table_view.s: show_table_view.cpp.s
+.PHONY : show_table_view.s
 
 # target to generate assembly for a file
-showtableview.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/showtableview.cpp.s
-.PHONY : showtableview.cpp.s
+show_table_view.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/show_table_view.cpp.s
+.PHONY : show_table_view.cpp.s
 
 structures.obj: structures.cpp.obj
 .PHONY : structures.obj
@@ -415,29 +487,29 @@ validate_stuctures.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/validate_stuctures.cpp.s
 .PHONY : validate_stuctures.cpp.s
 
-windowshowstructures.obj: windowshowstructures.cpp.obj
-.PHONY : windowshowstructures.obj
+window_show_structures.obj: window_show_structures.cpp.obj
+.PHONY : window_show_structures.obj
 
 # target to build an object file
-windowshowstructures.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/windowshowstructures.cpp.obj
-.PHONY : windowshowstructures.cpp.obj
+window_show_structures.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/window_show_structures.cpp.obj
+.PHONY : window_show_structures.cpp.obj
 
-windowshowstructures.i: windowshowstructures.cpp.i
-.PHONY : windowshowstructures.i
+window_show_structures.i: window_show_structures.cpp.i
+.PHONY : window_show_structures.i
 
 # target to preprocess a source file
-windowshowstructures.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/windowshowstructures.cpp.i
-.PHONY : windowshowstructures.cpp.i
+window_show_structures.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/window_show_structures.cpp.i
+.PHONY : window_show_structures.cpp.i
 
-windowshowstructures.s: windowshowstructures.cpp.s
-.PHONY : windowshowstructures.s
+window_show_structures.s: window_show_structures.cpp.s
+.PHONY : window_show_structures.s
 
 # target to generate assembly for a file
-windowshowstructures.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/windowshowstructures.cpp.s
-.PHONY : windowshowstructures.cpp.s
+window_show_structures.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make CMakeFiles/course.dir/window_show_structures.cpp.s
+.PHONY : window_show_structures.cpp.s
 
 # Help Target
 help:
@@ -457,33 +529,42 @@ help:
 	@echo ... course_autogen/mocs_compilation.obj
 	@echo ... course_autogen/mocs_compilation.i
 	@echo ... course_autogen/mocs_compilation.s
-	@echo ... inputreportdialog.obj
-	@echo ... inputreportdialog.i
-	@echo ... inputreportdialog.s
-	@echo ... investigationdirectory.obj
-	@echo ... investigationdirectory.i
-	@echo ... investigationdirectory.s
+	@echo ... filter_dialog.obj
+	@echo ... filter_dialog.i
+	@echo ... filter_dialog.s
+	@echo ... input_investigation_dialog.obj
+	@echo ... input_investigation_dialog.i
+	@echo ... input_investigation_dialog.s
+	@echo ... input_report_dialog.obj
+	@echo ... input_report_dialog.i
+	@echo ... input_report_dialog.s
+	@echo ... investigation_directory.obj
+	@echo ... investigation_directory.i
+	@echo ... investigation_directory.s
+	@echo ... investigation_table_model.obj
+	@echo ... investigation_table_model.i
+	@echo ... investigation_table_model.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... reportdirectory.obj
-	@echo ... reportdirectory.i
-	@echo ... reportdirectory.s
-	@echo ... reporttablemodel.obj
-	@echo ... reporttablemodel.i
-	@echo ... reporttablemodel.s
-	@echo ... showtableview.obj
-	@echo ... showtableview.i
-	@echo ... showtableview.s
+	@echo ... report_directory.obj
+	@echo ... report_directory.i
+	@echo ... report_directory.s
+	@echo ... report_table_model.obj
+	@echo ... report_table_model.i
+	@echo ... report_table_model.s
+	@echo ... show_table_view.obj
+	@echo ... show_table_view.i
+	@echo ... show_table_view.s
 	@echo ... structures.obj
 	@echo ... structures.i
 	@echo ... structures.s
 	@echo ... validate_stuctures.obj
 	@echo ... validate_stuctures.i
 	@echo ... validate_stuctures.s
-	@echo ... windowshowstructures.obj
-	@echo ... windowshowstructures.i
-	@echo ... windowshowstructures.s
+	@echo ... window_show_structures.obj
+	@echo ... window_show_structures.i
+	@echo ... window_show_structures.s
 .PHONY : help
 
 

@@ -518,7 +518,12 @@ QToolBar::separator {
     margin-right: 6px;
     margin-top: 5px;           
     margin-bottom: 5px;        
-}</string>
+}
+
+QStatusBar {
+    min-height: 10px;
+    max-height: 10px;
+    }</string>
   </property>
   <property name="animated">
    <bool>false</bool>
@@ -1011,6 +1016,12 @@ QToolBar::separator {
     </property>
     <item>
      <widget class="QLabel" name="TextLabelInvestigationsDirectory">
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
     font-size: 14px;
@@ -1500,6 +1511,35 @@ QToolBar::separator {
       <property name="editTriggers">
        <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
       </property>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="SelectRowText">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #707070;
+font-size: 11px;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+      <property name="indent">
+       <number>9</number>
+      </property>
      </widget>
     </item>
    </layout>
@@ -1508,7 +1548,7 @@ QToolBar::separator {
    <property name="minimumSize">
     <size>
      <width>0</width>
-     <height>25</height>
+     <height>10</height>
     </size>
    </property>
   </widget>
@@ -1557,6 +1597,9 @@ QToolBar::separator {
    <addaction name="separator"/>
    <addaction name="separator"/>
    <addaction name="actionPrintStructures"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="actionEraseDirectory"/>
   </widget>
   <action name="actionAddInvestigation">
    <property name="checkable">
@@ -1569,7 +1612,7 @@ QToolBar::separator {
     <iconset theme="QIcon::ThemeIcon::ListAdd"/>
    </property>
    <property name="text">
-    <string>Добавить заявку</string>
+    <string>Добавить следствие</string>
    </property>
    <property name="menuRole">
     <enum>QAction::MenuRole::NoRole</enum>
@@ -1580,7 +1623,7 @@ QToolBar::separator {
     <iconset theme="QIcon::ThemeIcon::EditClear"/>
    </property>
    <property name="text">
-    <string>Удалить заявку</string>
+    <string>Удалить следствие</string>
    </property>
    <property name="toolTip">
     <string>Удалить следствие</string>
@@ -1627,13 +1670,13 @@ QToolBar::separator {
     <iconset theme="QIcon::ThemeIcon::EditFind"/>
    </property>
    <property name="text">
-    <string>Поиск по номеру заявки</string>
+    <string>Поиск по номеру заявления</string>
    </property>
    <property name="iconText">
-    <string>Поиск по номеру следствия</string>
+    <string>Поиск по номеру заявления</string>
    </property>
    <property name="toolTip">
-    <string>Поиск по номеру следствия</string>
+    <string>Поиск по номеру заявления</string>
    </property>
    <property name="menuRole">
     <enum>QAction::MenuRole::NoRole</enum>
@@ -1652,7 +1695,7 @@ QToolBar::separator {
   </action>
   <action name="actionPrintRBTreeReportsNumbers">
    <property name="text">
-    <string>Распечатать КЧ-дерево номеров заявок</string>
+    <string>Распечатать КЧ-дерево номеров заявлений</string>
    </property>
    <property name="iconText">
     <string>Распечатать красно-чёрное дерево</string>
@@ -1672,6 +1715,20 @@ QToolBar::separator {
   <action name="actionPrintRBTreeDates">
    <property name="text">
     <string>Распечатать дерево дат следствий</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionEraseDirectory">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::EditDelete"/>
+   </property>
+   <property name="text">
+    <string>Отчистить справочник следствий</string>
+   </property>
+   <property name="toolTip">
+    <string>Отчистить справочник следствий</string>
    </property>
    <property name="menuRole">
     <enum>QAction::MenuRole::NoRole</enum>

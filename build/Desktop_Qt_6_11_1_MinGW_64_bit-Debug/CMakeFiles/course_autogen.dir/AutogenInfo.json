@@ -10,63 +10,10 @@
 		"D:/ACID/dz_4/PoiliceDirectory/CMakeLists.txt",
 		"D:/ACID/dz_4/PoiliceDirectory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qtcreator/cmake-helper/qtcreator-project.cmake",
 		"D:/ACID/dz_4/PoiliceDirectory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qtcreator/cmake-helper/package-manager.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeSystem.cmake.in",
 		"D:/ACID/dz_4/PoiliceDirectory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeMinGWFindMake.cmake",
 		"D:/ACID/dz_4/PoiliceDirectory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake",
 		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake",
 		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-Determine-CXX.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCompilerIdDetection.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/ADSP-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/ARMCC-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/ARMClang-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/AppleClang-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompilerInternal.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Borland-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompilerInternal.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Cray-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/CrayClang-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Embarcadero-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Fujitsu-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/GHS-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/HP-CXX-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/IAR-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Intel-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/MSVC-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/NVHPC-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/NVIDIA-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/OrangeC-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/PGI-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/PathScale-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/SCO-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/TI-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/TIClang-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Tasking-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/Watcom-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/XL-CXX-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindBinUtils.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/GNU-FindBinUtils.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCXXCompiler.cmake.in",
 		"D:/ACID/dz_4/PoiliceDirectory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake",
 		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake",
 		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake",
@@ -80,27 +27,11 @@
 		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
 		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX.cmake",
 		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-GNU.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineRCCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeRCCompiler.cmake.in",
 		"D:/ACID/dz_4/PoiliceDirectory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake",
 		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeRCInformation.cmake",
 		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-windres.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeTestRCCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeTestCompilerCommon.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeParseImplicitIncludeInfo.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeParseImplicitLinkInfo.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeParseLibraryArchitecture.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeTestCompilerCommon.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineCompilerSupport.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Internal/FeatureTesting.cmake",
-		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCXXCompiler.cmake.in",
-		"D:/ACID/dz_4/PoiliceDirectory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake",
 		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
+		"D:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake",
 		"D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6Config.cmake",
@@ -417,12 +348,6 @@
 			null
 		],
 		[
-			"D:/ACID/dz_4/PoiliceDirectory/DynamicArray.h",
-			"MU",
-			"EWIEGA46WW/moc_DynamicArray.cpp",
-			null
-		],
-		[
 			"D:/ACID/dz_4/PoiliceDirectory/IStorage.h",
 			"MU",
 			"EWIEGA46WW/moc_IStorage.cpp",
@@ -432,6 +357,18 @@
 			"D:/ACID/dz_4/PoiliceDirectory/Pair.h",
 			"MU",
 			"EWIEGA46WW/moc_Pair.cpp",
+			null
+		],
+		[
+			"D:/ACID/dz_4/PoiliceDirectory/StaticArray.h",
+			"MU",
+			"EWIEGA46WW/moc_StaticArray.cpp",
+			null
+		],
+		[
+			"D:/ACID/dz_4/PoiliceDirectory/filter_dialog.h",
+			"MU",
+			"EWIEGA46WW/moc_filter_dialog.cpp",
 			null
 		],
 		[
@@ -459,15 +396,27 @@
 			null
 		],
 		[
-			"D:/ACID/dz_4/PoiliceDirectory/inputreportdialog.h",
+			"D:/ACID/dz_4/PoiliceDirectory/input_investigation_dialog.h",
 			"MU",
-			"EWIEGA46WW/moc_inputreportdialog.cpp",
+			"EWIEGA46WW/moc_input_investigation_dialog.cpp",
 			null
 		],
 		[
-			"D:/ACID/dz_4/PoiliceDirectory/investigationdirectory.h",
+			"D:/ACID/dz_4/PoiliceDirectory/input_report_dialog.h",
 			"MU",
-			"EWIEGA46WW/moc_investigationdirectory.cpp",
+			"EWIEGA46WW/moc_input_report_dialog.cpp",
+			null
+		],
+		[
+			"D:/ACID/dz_4/PoiliceDirectory/investigation_directory.h",
+			"MU",
+			"EWIEGA46WW/moc_investigation_directory.cpp",
+			null
+		],
+		[
+			"D:/ACID/dz_4/PoiliceDirectory/investigation_table_model.h",
+			"MU",
+			"EWIEGA46WW/moc_investigation_table_model.cpp",
 			null
 		],
 		[
@@ -477,21 +426,21 @@
 			null
 		],
 		[
-			"D:/ACID/dz_4/PoiliceDirectory/reportdirectory.h",
+			"D:/ACID/dz_4/PoiliceDirectory/report_directory.h",
 			"MU",
-			"EWIEGA46WW/moc_reportdirectory.cpp",
+			"EWIEGA46WW/moc_report_directory.cpp",
 			null
 		],
 		[
-			"D:/ACID/dz_4/PoiliceDirectory/reporttablemodel.h",
+			"D:/ACID/dz_4/PoiliceDirectory/report_table_model.h",
 			"MU",
-			"EWIEGA46WW/moc_reporttablemodel.cpp",
+			"EWIEGA46WW/moc_report_table_model.cpp",
 			null
 		],
 		[
-			"D:/ACID/dz_4/PoiliceDirectory/showtableview.h",
+			"D:/ACID/dz_4/PoiliceDirectory/show_table_view.h",
 			"MU",
-			"EWIEGA46WW/moc_showtableview.cpp",
+			"EWIEGA46WW/moc_show_table_view.cpp",
 			null
 		],
 		[
@@ -531,9 +480,9 @@
 			null
 		],
 		[
-			"D:/ACID/dz_4/PoiliceDirectory/windowshowstructures.h",
+			"D:/ACID/dz_4/PoiliceDirectory/window_show_structures.h",
 			"MU",
-			"EWIEGA46WW/moc_windowshowstructures.cpp",
+			"EWIEGA46WW/moc_window_show_structures.cpp",
 			null
 		]
 	],
@@ -545,6 +494,7 @@
 		"MINGW_HAS_SECURE_API=1",
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
+		"QT_NEEDS_QMAIN",
 		"QT_QML_DEBUG",
 		"QT_WIDGETS_LIB",
 		"UNICODE",
@@ -608,19 +558,34 @@
 	"SETTINGS_FILE" : "D:/ACID/dz_4/PoiliceDirectory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/CMakeFiles/course_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "D:/ACID/dz_4/PoiliceDirectory/inputreportdialog.cpp", "MU", null ],
+		[ "D:/ACID/dz_4/PoiliceDirectory/filter_dialog.cpp", "MU", null ],
 		[
-			"D:/ACID/dz_4/PoiliceDirectory/investigationdirectory.cpp",
+			"D:/ACID/dz_4/PoiliceDirectory/input_investigation_dialog.cpp",
+			"MU",
+			null
+		],
+		[ "D:/ACID/dz_4/PoiliceDirectory/input_report_dialog.cpp", "MU", null ],
+		[
+			"D:/ACID/dz_4/PoiliceDirectory/investigation_directory.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/ACID/dz_4/PoiliceDirectory/investigation_table_model.cpp",
 			"MU",
 			null
 		],
 		[ "D:/ACID/dz_4/PoiliceDirectory/main.cpp", "MU", null ],
-		[ "D:/ACID/dz_4/PoiliceDirectory/reportdirectory.cpp", "MU", null ],
-		[ "D:/ACID/dz_4/PoiliceDirectory/reporttablemodel.cpp", "MU", null ],
-		[ "D:/ACID/dz_4/PoiliceDirectory/showtableview.cpp", "MU", null ],
+		[ "D:/ACID/dz_4/PoiliceDirectory/report_directory.cpp", "MU", null ],
+		[ "D:/ACID/dz_4/PoiliceDirectory/report_table_model.cpp", "MU", null ],
+		[ "D:/ACID/dz_4/PoiliceDirectory/show_table_view.cpp", "MU", null ],
 		[ "D:/ACID/dz_4/PoiliceDirectory/structures.cpp", "MU", null ],
 		[ "D:/ACID/dz_4/PoiliceDirectory/validate_stuctures.cpp", "MU", null ],
-		[ "D:/ACID/dz_4/PoiliceDirectory/windowshowstructures.cpp", "MU", null ]
+		[
+			"D:/ACID/dz_4/PoiliceDirectory/window_show_structures.cpp",
+			"MU",
+			null
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

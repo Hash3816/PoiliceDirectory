@@ -90,10 +90,10 @@ struct Investigation{
     Date initiation_date;
 
     Investigation() = default;
-    Investigation(unsigned int report_number,FullName Investigator,
+    Investigation(unsigned int report_number,FullName investigator,
                   Status investigation_status, Date initiation_date){
         this->report_number = report_number;
-        this->investigator = Investigator;
+        this->investigator = investigator;
         this->investigation_status = investigation_status;
         this->initiation_date = initiation_date;
     };
@@ -110,10 +110,3 @@ std::ostream& operator<<(std::ostream& os, const Investigation& investigation);
 std::string info_to_string(const Investigation& investigation);
 Investigation string_to_investigation(const std::string& investigation);
 
-struct step_number_and_index{
-    unsigned int step_number;
-    unsigned int index;
-    step_number_and_index():step_number(0), index(-1){}
-    step_number_and_index(unsigned int step_number, unsigned int index):
-        step_number(step_number), index(index){}
-};

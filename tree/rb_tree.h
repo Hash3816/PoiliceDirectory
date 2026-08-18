@@ -7,8 +7,6 @@
 #include <iostream>
 
 
-
-
 template <typename Key, typename Value> 
 class RB_tree:public ITree<Key,Value>{
 private:
@@ -27,12 +25,12 @@ private:
 		Node* parent;
 	};
 
+	Node* root;
+	Node* nil;
+
     std::string color_node_to_string(const ColorNode& color) const{
         return (color == ColorNode::black ? "B" : "R");
     }
-
-	Node* root;
-	Node* nil;
 
 	void left_rotate(Node* subtree) {
 		Node* right_node = subtree->right;
@@ -60,14 +58,14 @@ private:
 	}
 
 	void right_rotate(Node* subtree) {
-		Node* left_node = subtree->left;
+        Node* left_node = subtree->left; //Сохраняем адрес левого дочернего узла
 
-		subtree->left = left_node->right;
+        subtree->left = left_node->right;
 		if (left_node->right != nil) {
-			left_node->right->parent = subtree;
+            left_node->right->parent = subtree;
 		}
 
-		left_node->parent = subtree->parent;
+        left_node->parent = subtree->parent;
 		if (subtree->parent == nil) {
 			root = left_node;
 		}
@@ -86,25 +84,25 @@ private:
 	void insert_fixup(Node* new_node) {
         while (new_node->parent->color == ColorNode::red) {
 
-			if (new_node->parent == new_node->parent->parent->left) {
+            if (new_node->parent == new_node->parent->parent->left) {
 				Node* uncle_node = new_node->parent->parent->right;
 
                 if (uncle_node->color == ColorNode::red) {
                     new_node->parent->color = ColorNode::black;
                     uncle_node->color = ColorNode::black;
                     new_node->parent->parent->color = ColorNode::red;
-					new_node = new_node->parent->parent;
+                    new_node = new_node->parent->parent;
 				}
 
-				else {
-					if (new_node == new_node->parent->right) {
+                else { // Дядя чёрный
+                    if (new_node == new_node->parent->right) {
 						new_node = new_node->parent;
-						left_rotate(new_node);
+                        left_rotate(new_node);
 					}
 
                     new_node->parent->color = ColorNode::black;
                     new_node->parent->parent->color = ColorNode::red;
-					right_rotate(new_node->parent->parent);
+                    right_rotate(new_node->parent->parent);
 				}
 			}
 
@@ -214,22 +212,6 @@ private:
 		v->parent = u->parent;
 	}
 
-	Node* find_node(const Key& key) const{
-		Node* current_node = root;
-		while (current_node != nil) {
-			if (key < current_node->key) {
-				current_node = current_node->left;
-			}
-			else if (key > current_node->key) {
-				current_node = current_node->right;
-			}
-			else {
-				return current_node;
-			}
-		}
-		return nil;
-	}
-
 	Node* minimum(Node* subtree) const  {
 		while (subtree->left != nil) {
 			subtree = subtree->left;
@@ -241,7 +223,7 @@ private:
 	void _inorder_walk(Node* node, std::stringstream& result) const{
 		if (node != nil) {
 			_inorder_walk(node->left, result);
-			result <<  color_to_string(node->color) << ": " << (node->key) << "->";
+            result <<  color_node_to_string(node->color) << ": " << (node->key) << "->";
 			result << node->list->to_string();
 			result << "\n";
 			_inorder_walk(node->right, result);
@@ -251,22 +233,38 @@ private:
 	
 	void _print(Node* node, unsigned int level = 0) const{
 		if (node != nil) {
-			_print(node->left, level + 1);
+            _print(node->right, level + 1);
             std::cout << std::string(level * 8, ' ') << color_node_to_string(node->color) << ": " << node->key << "->";
 			node->list->print();
 			std::cout << "\n";
-			_print(node->right, level + 1);
+            _print(node->left, level + 1);
 		}
 	}
 
+    Node* _find_node(const Key& key){
+        Node* current_node = root;
+        while(current_node != nil){
+            if(key < current_node->key){
+                current_node = current_node ->left;
+            }
+            else if(key > current_node->key){
+                current_node = current_node->right;
+            }
+            else{
+                return current_node;
+            }
+        }
+        return current_node;
+    }
+
 	void _to_string(Node* node, std::stringstream& result, unsigned int level = 0) const{
 		if (node != nil) {
-			_to_string(node->left,result, level + 1);
+            _to_string(node->right,result, level + 1);
 			result << std::string(level * 8, ' ');
             result << color_node_to_string(node->color) << ": " << node->key << " ";
 			result << node->list->to_string();
 			result << "\n";
-			_to_string(node->right, result, level + 1);
+            _to_string(node->left, result, level + 1);
 		}
 	}
 	void clear_tree(Node* node) {
@@ -274,7 +272,7 @@ private:
 			clear_tree(node->left);
 			clear_tree(node->right);
 
-            node->list->clear();
+            delete node->list;
 			delete node;
 		}
 	}
@@ -286,14 +284,18 @@ public:
 		nil->left = nil;
 		nil->right = nil;
 		nil->parent = nil;
+        nil->list = new List<Value>;
 
 		root = nil;
 	}
 
 	~RB_tree() {
 		clear_tree(root);
-		delete nil;
+        delete nil->list;
+        delete nil;
 	}
+    RB_tree(const RB_tree&) = delete;
+    RB_tree& operator=(const RB_tree&) = delete;
 
 	std::string inorder_walk() const{ 
 		if (root == nil) {
@@ -370,9 +372,9 @@ public:
 
 
 	void erase(const Key& key, const Value& value) override{
-		Node* del_node = find_node(key);
+        Node* del_node = _find_node(key);
 		if (del_node == nil) {
-			throw std::runtime_error("Not found node with this key in tree");
+            throw std::runtime_error("Не найден узел с заданным ключом в дереве.");
 		}
 		del_node->list->del_by_value(value);
 		if (!del_node->list->empty()) {
@@ -423,24 +425,24 @@ public:
 		Node* current_node = root;
 		unsigned int step = 1;
 		while (current_node != nil) {
-			if (current_node->key == key) {
-				return Pair<unsigned int,  const List<Value>&>(step, *current_node->list);
-			}
-			else if (key < current_node->key) {
+            if (key < current_node->key) {
 				current_node = current_node->left;
 				step += 1;
 			}
-			else {
+            else if(key > current_node->key) {
 				current_node = current_node->right;
 				step += 1;
 			}
+            else {
+                return Pair<unsigned int,  const List<Value>&>(step, *current_node->list);
+            }
 		}
-		static const List<Value> empty_list; //Можно передавать и пустой лист через конструктор но не безопасно
-		//Сам пустой лист на памяти практический ничего не весит так как в своём поле содержит лишь head == nullptr
-		return Pair<unsigned int, const List<Value>&>(0, empty_list);
+
+        return Pair<unsigned int, const List<Value>&>(0, *nil->list);
 	}
 
 	void clear() override {
 		clear_tree(root);
+        root = nil;
 	}
 };

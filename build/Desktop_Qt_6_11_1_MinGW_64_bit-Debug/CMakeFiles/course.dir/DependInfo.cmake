@@ -10,15 +10,18 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "course_autogen/timestamp" "custom" "course_autogen/deps"
   "D:/ACID/dz_4/PoiliceDirectory/build/Desktop_Qt_6_11_1_MinGW_64_bit-Debug/course_autogen/mocs_compilation.cpp" "CMakeFiles/course.dir/course_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/course.dir/course_autogen/mocs_compilation.cpp.obj.d"
-  "D:/ACID/dz_4/PoiliceDirectory/inputreportdialog.cpp" "CMakeFiles/course.dir/inputreportdialog.cpp.obj" "gcc" "CMakeFiles/course.dir/inputreportdialog.cpp.obj.d"
-  "D:/ACID/dz_4/PoiliceDirectory/investigationdirectory.cpp" "CMakeFiles/course.dir/investigationdirectory.cpp.obj" "gcc" "CMakeFiles/course.dir/investigationdirectory.cpp.obj.d"
+  "D:/ACID/dz_4/PoiliceDirectory/filter_dialog.cpp" "CMakeFiles/course.dir/filter_dialog.cpp.obj" "gcc" "CMakeFiles/course.dir/filter_dialog.cpp.obj.d"
+  "D:/ACID/dz_4/PoiliceDirectory/input_investigation_dialog.cpp" "CMakeFiles/course.dir/input_investigation_dialog.cpp.obj" "gcc" "CMakeFiles/course.dir/input_investigation_dialog.cpp.obj.d"
+  "D:/ACID/dz_4/PoiliceDirectory/input_report_dialog.cpp" "CMakeFiles/course.dir/input_report_dialog.cpp.obj" "gcc" "CMakeFiles/course.dir/input_report_dialog.cpp.obj.d"
+  "D:/ACID/dz_4/PoiliceDirectory/investigation_directory.cpp" "CMakeFiles/course.dir/investigation_directory.cpp.obj" "gcc" "CMakeFiles/course.dir/investigation_directory.cpp.obj.d"
+  "D:/ACID/dz_4/PoiliceDirectory/investigation_table_model.cpp" "CMakeFiles/course.dir/investigation_table_model.cpp.obj" "gcc" "CMakeFiles/course.dir/investigation_table_model.cpp.obj.d"
   "D:/ACID/dz_4/PoiliceDirectory/main.cpp" "CMakeFiles/course.dir/main.cpp.obj" "gcc" "CMakeFiles/course.dir/main.cpp.obj.d"
-  "D:/ACID/dz_4/PoiliceDirectory/reportdirectory.cpp" "CMakeFiles/course.dir/reportdirectory.cpp.obj" "gcc" "CMakeFiles/course.dir/reportdirectory.cpp.obj.d"
-  "D:/ACID/dz_4/PoiliceDirectory/reporttablemodel.cpp" "CMakeFiles/course.dir/reporttablemodel.cpp.obj" "gcc" "CMakeFiles/course.dir/reporttablemodel.cpp.obj.d"
-  "D:/ACID/dz_4/PoiliceDirectory/showtableview.cpp" "CMakeFiles/course.dir/showtableview.cpp.obj" "gcc" "CMakeFiles/course.dir/showtableview.cpp.obj.d"
+  "D:/ACID/dz_4/PoiliceDirectory/report_directory.cpp" "CMakeFiles/course.dir/report_directory.cpp.obj" "gcc" "CMakeFiles/course.dir/report_directory.cpp.obj.d"
+  "D:/ACID/dz_4/PoiliceDirectory/report_table_model.cpp" "CMakeFiles/course.dir/report_table_model.cpp.obj" "gcc" "CMakeFiles/course.dir/report_table_model.cpp.obj.d"
+  "D:/ACID/dz_4/PoiliceDirectory/show_table_view.cpp" "CMakeFiles/course.dir/show_table_view.cpp.obj" "gcc" "CMakeFiles/course.dir/show_table_view.cpp.obj.d"
   "D:/ACID/dz_4/PoiliceDirectory/structures.cpp" "CMakeFiles/course.dir/structures.cpp.obj" "gcc" "CMakeFiles/course.dir/structures.cpp.obj.d"
   "D:/ACID/dz_4/PoiliceDirectory/validate_stuctures.cpp" "CMakeFiles/course.dir/validate_stuctures.cpp.obj" "gcc" "CMakeFiles/course.dir/validate_stuctures.cpp.obj.d"
-  "D:/ACID/dz_4/PoiliceDirectory/windowshowstructures.cpp" "CMakeFiles/course.dir/windowshowstructures.cpp.obj" "gcc" "CMakeFiles/course.dir/windowshowstructures.cpp.obj.d"
+  "D:/ACID/dz_4/PoiliceDirectory/window_show_structures.cpp" "CMakeFiles/course.dir/window_show_structures.cpp.obj" "gcc" "CMakeFiles/course.dir/window_show_structures.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -1,13 +1,16 @@
 ﻿#pragma once
 #include <QRegularExpression>
 #include <QString>
-#include <vector> //Пока пусть просто вектор будет, потом Qvector
+#include <vector>
+#include <fstream>
+#include "validate_structures.h"
 #include "IStorage.h"
 #include "./tree/DataManagerTree.h"
 #include "./hash_table/DataManagerHashTable.h"
-#include "DynamicArray.h"
+#include "StaticArray.h"
 #include "./hash_table/hash_table.h"
 #include "./tree/rb_tree.h"
+#include "validate_structures.h"
 
 class DataService{
 private:
@@ -15,8 +18,8 @@ private:
     DataManagerTree investigations_directory;
 
     DataService() :
-        reports_directory(new DynamicArray<PoliceReport>, new HashTable<unsigned int, unsigned int>),
-        investigations_directory(new DynamicArray<Investigation>, new RB_tree<unsigned int, unsigned int>,
+        reports_directory(new StaticArray<PoliceReport>, new HashTable<unsigned int, unsigned int>),
+        investigations_directory(new StaticArray<Investigation>, new RB_tree<unsigned int, unsigned int>,
             new RB_tree<Date, unsigned int>) {
     }
     ~DataService() = default;
@@ -32,17 +35,34 @@ public:
         return instance;
     }
 
-
-    //Всё получили InterfaceStorage можно рисовать 1 справочник
-    //При загрузке справочника нужно диалоговое окно 
-    // "вы уверены что хотите загрузить новый справочник все несохранённые данные будут стёрты"
     const InterfaceStorage<PoliceReport>& load_reports_from_file(const std::string& path){
-      
         reports_directory.load_data_from_file(path);
         return reports_directory.get_storage();
     }
     const InterfaceStorage<Investigation>& load_investigations_from_file(const std::string& path) {
-        investigations_directory.load_data_from_file(path);
+        std::ifstream input;
+
+        input.open(path);
+        if (!input.is_open()) {
+            throw std::runtime_error("Ошибка при открытии файла.");
+        }
+
+        int number_rows;
+        input >> number_rows;
+        input.get();
+        if(input.fail()){
+            throw std::runtime_error("Файл повреждён.");
+        }
+        std::string info_user_s;
+        for (int i = 0; i < number_rows; i++) {
+            std::getline(input, info_user_s);
+            Investigation investigation = string_to_investigation(info_user_s);
+
+            if(reports_directory.find(investigation.report_number).first == 0){
+                throw std::runtime_error("В файле обнаружено следствие, номера заявления которого нет в справочнике заявлений.");
+            }
+            investigations_directory.append(investigation);
+        }
         return investigations_directory.get_storage();
     }
 
@@ -62,187 +82,40 @@ public:
         }
 
         if(report.report_number < 1 || report.report_number > 9999){
-            throw std::runtime_error("Неверно введён номер заявки.");
+            throw std::runtime_error("Некорректный номер заявления.");
         }
-
-        //Перенести код в отдельный метод
-        if(report.applicant.name.empty()){
-            throw std::runtime_error("Поле имя пусто.");
-        }
-        if(report.applicant.surname.empty()){
-            throw std::runtime_error("Поле фамилия пусто.");
-        }
-        if(report.applicant.patronymic.empty()){
-            throw std::runtime_error("Поле отчество пусто.");
-        }
-
-
-        QString surname = QString::fromStdString(report.applicant.surname);
-        QString name = QString::fromStdString(report.applicant.name);
-        QString patronymic = QString::fromStdString(report.applicant.patronymic);
-        QString description = QString::fromStdString(report.description);
-
-        if(name.size() > 50){
-            throw std::runtime_error("Поле имя превышает допустимый размер.");
-        }
-
-        if(surname.size() > 50){
-            throw std::runtime_error("Поле фамилия превышает допустимый размер.");
-        }
-
-        if(patronymic.size() > 50){
-            throw std::runtime_error("Поле отчество превышает допустимый размер.");
-        }
-
-        if(description.size() > 100){
+        if(report.description.size() > 200){
             throw std::runtime_error("Поле описание превышает допустимый размер.");
         }
 
-        if(!surname[0].isUpper()){
-            throw std::runtime_error("Фамилия должна начинаться с заглавной буквы.");
-        }
-        if(!name[0].isUpper()){
-            throw std::runtime_error("Имя должно начинаться с заглавной буквы.");
-        }
-        if(!patronymic[0].isUpper()){
-            throw std::runtime_error("Отчество должно начинаться с заглавной буквы.");
-        }
-
-        if(name[name.size()-1].isUpper() && (name.size() != 1)){
-            throw std::runtime_error("Имя не должно оканичваться на заглавную букву.");
-        }
-        if(surname[surname.size()-1].isUpper() && (surname.size() != 1)){
-            throw std::runtime_error("Фамилия не должна оканичваться на заглавную букву.");
-        }
-        if(patronymic[patronymic.size()-1].isUpper() && (patronymic.size() != 1)){
-            throw std::runtime_error("Отчество не должно оканичваться на заглавную букву.");
-        }
-
-        if(name[name.size()-1] == "-"){
-            throw std::runtime_error("Имя не должно оканичваться на дефис.");
-        }
-        if(surname[surname.size()-1] == "-"){
-            throw std::runtime_error("Фамилия не должна оканичваться на дефис.");
-        }
-        if(patronymic[patronymic.size()-1] == "-"){
-            throw std::runtime_error("Отчество не должно оканичваться на дефис.");
-        }
-
-        unsigned int count_dash = 0;
-        unsigned int count_upper_symbols = 1; // первая заглавная буква
-        for(unsigned int i = 1; i < surname.size() - 1; i++){ //от 2 до предпоследнего символа
-            if(surname[i] == "-" && !surname[i + 1].isUpper()){
-                throw std::runtime_error("В фамилии после дефиса должна  начинаться заглавная буква.");
-            }
-            if(surname[i] == "-"){
-                count_dash += 1;
-            }
-            if(count_dash > 3){
-                throw std::runtime_error("Превышено максимальное количество дефисов в фамилии.");
-            }
-            if(surname[i].isUpper() && surname[i - 1] != "-"){
-                throw std::runtime_error("Не считая первого символа фамилии, перед заглавной буквой должен быть дефис.");
-            }
-            if(surname[i].isUpper()){
-                count_upper_symbols += 1;
-            }
-            if(count_upper_symbols > 4){
-                throw std::runtime_error("Превышено максимальное количество заглавных букв в фамилии.");
-            }
-        }
-
-        count_dash = 0;
-        count_upper_symbols = 1; // первая заглавная буква
-        for(unsigned int i = 1; i < name.size() - 1; i++){ //от 2 до предпоследнего символа
-            if(name[i] == "-" && !name[i + 1].isUpper()){
-                throw std::runtime_error("В имени после дефиса должна начинаться заглавная буква.");
-            }
-            if(name[i] == "-"){
-                count_dash += 1;
-            }
-            if(count_dash > 3){
-                throw std::runtime_error("Превышено максимальное количество дефисов в имени.");
-            }
-            if(name[i].isUpper() && name[i - 1] != "-"){
-                throw std::runtime_error("Не считая первого символа имени, перед заглавной буквой должен быть дефис.");
-            }
-            if(name[i].isUpper()){
-                count_upper_symbols += 1;
-            }
-            if(count_upper_symbols > 4){
-                throw std::runtime_error("Превышено максимальное количество заглавных букв в имени.");
-            }
-        }
-
-        count_dash = 0;
-        count_upper_symbols = 1; // первая заглавная буква
-        for(unsigned int i = 1; i < patronymic.size() - 1; i++){ //от 2 до предпоследнего символа
-            if(patronymic[i] == "-" && !patronymic[i + 1].isUpper()){
-                throw std::runtime_error("В отчестве после дефиса должна начинаться заглавная буква.");
-            }
-            if(patronymic[i] == "-"){
-                count_dash += 1;
-            }
-            if(count_dash > 3){
-                throw std::runtime_error("Превышено максимальное количество дефисов в отчестве.");
-            }
-            if(patronymic[i].isUpper() && patronymic[i - 1] != "-"){
-                throw std::runtime_error("Не считая первого символа отчества, перед заглавной буквой должен быть дефис.");
-            }
-            if(patronymic[i].isUpper()){
-                count_upper_symbols += 1;
-            }
-            if(count_upper_symbols > 4){
-                throw std::runtime_error("Превышено максимальное количество заглавных букв в отчестве.");
-            }
-        }
-
-        QRegularExpression allowedRegex("^[а-яА-ЯёЁ-]+$");
-        if (!allowedRegex.match(surname).hasMatch()) {
-            throw std::runtime_error("Фамилия может содержать только русские буквы и дефис.");
-        }
-        if (!allowedRegex.match(name).hasMatch()) {
-            throw std::runtime_error("Имя может содержать только русские буквы и дефис.");
-        }
-        if (!allowedRegex.match(patronymic).hasMatch()) {
-            throw std::runtime_error("Отчество может содержать только русские буквы и дефис.");
-        }
-        reports_directory.append(report); //Заявление может быть дубликатом обработать исключение в ui с выводом сообщения
+        validate_full_name(report.applicant);
+        reports_directory.append(report);
     };
     void del_report(const PoliceReport& report, unsigned int index) {
-        //Тут хоть и неочевидно, но лучше сначала проверить ведут ли с следователи эту заявку, проверить это
-        //Сначала спросить у пользователя готов ли он удалять следователей с заявки в 2 справочнике,
-        // Можно их вывести списком в диалоговом окне
-        // если пользователь согласен  вызвать метод удаления заявок в цикле
-        // потом вызвать метод удаления этой заявки
-        //Также может оказаться что заявки вообще нет, поэтому в ui вызывать метод find перед вызовом 
         reports_directory.erase(report, index);
     }
 
   
     void add_investigation(const Investigation& investigation) {
-        if (reports_directory.find(investigation.report_number).first == 0) {
-            throw std::runtime_error("В справочнике заявлений не найден номер заявления.");
+        if(investigation.report_number < 1 || investigation.report_number > 9999){
+            throw std::runtime_error("Некорректный номер заявления.");
         }
-
+        if (reports_directory.find(investigation.report_number).first == 0) {
+            throw std::runtime_error("В справочнике заявлений не найден заданный номер заявления.\n Сначала добавьте заявление в справочник заявлений.");
+        }
+        validate_full_name(investigation.investigator);
         investigations_directory.append(investigation);
     };
     void del_investigation(const Investigation& investigation, unsigned int index){
-        try {
+            validate_full_name(investigation.investigator);
+
             investigations_directory.erase(investigation, index);
-        }
-        catch (std::runtime_error error) {
-            if ((std::string(error.what()) == "index out of range") || (std::string(error.what()) == "invalid index")) {
-                throw std::runtime_error("Неверно введен номер строки следствия или следствие не существует.");
-            }
-            throw error;
-        }
     };
 
 
     Pair<unsigned int, std::vector<std::reference_wrapper<const PoliceReport>>> find_report_data(const unsigned int& report_number) const{
         if(report_number < 1 || report_number > 9999){
-            throw std::runtime_error("Неверный номер заявления.");
+            throw std::runtime_error("Некорректный номер заявления.");
         }
 
         std::vector<std::reference_wrapper<const PoliceReport>> result;
@@ -267,6 +140,10 @@ public:
         }
 
         return Pair<unsigned int, std::vector<std::reference_wrapper<const Investigation>>>(find_indices.first, investigations);
+    }
+
+    const Pair<unsigned int, const List<unsigned int>&> find_indicies_investigations_by_report_number(unsigned int report_number) const{
+        return investigations_directory.find(report_number);
     }
    
 
@@ -354,4 +231,7 @@ public:
         return investigations_directory.storage_to_string();
     }
 
+    unsigned int get_hash(const unsigned int& key) const{
+        return reports_directory.get_hash(key);
+    }
 };

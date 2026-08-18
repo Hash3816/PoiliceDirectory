@@ -285,6 +285,46 @@ CMakeFiles\course.dir\investigation_table_model.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\course.dir\investigation_table_model.cpp.s /c D:\ACID\dz_4\PoiliceDirectory\investigation_table_model.cpp
 <<
 
+CMakeFiles\course.dir\input_investigation_dialog.cpp.obj: CMakeFiles\course.dir\flags.make
+CMakeFiles\course.dir\input_investigation_dialog.cpp.obj: D:\ACID\dz_4\PoiliceDirectory\input_investigation_dialog.cpp
+CMakeFiles\course.dir\input_investigation_dialog.cpp.obj: CMakeFiles\course.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MSVC2022_64bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/course.dir/input_investigation_dialog.cpp.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\course.dir\input_investigation_dialog.cpp.obj.d --working-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MSVC2022_64bit-Debug --filter-prefix="Примечание: включение файла:  " -- C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\HostX64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\course.dir\input_investigation_dialog.cpp.obj /FdCMakeFiles\course.dir\ /FS -c D:\ACID\dz_4\PoiliceDirectory\input_investigation_dialog.cpp
+<<
+
+CMakeFiles\course.dir\input_investigation_dialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/course.dir/input_investigation_dialog.cpp.i"
+	C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\HostX64\x64\cl.exe > CMakeFiles\course.dir\input_investigation_dialog.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ACID\dz_4\PoiliceDirectory\input_investigation_dialog.cpp
+<<
+
+CMakeFiles\course.dir\input_investigation_dialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/course.dir/input_investigation_dialog.cpp.s"
+	C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\HostX64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\course.dir\input_investigation_dialog.cpp.s /c D:\ACID\dz_4\PoiliceDirectory\input_investigation_dialog.cpp
+<<
+
+CMakeFiles\course.dir\filter_dialog.cpp.obj: CMakeFiles\course.dir\flags.make
+CMakeFiles\course.dir\filter_dialog.cpp.obj: D:\ACID\dz_4\PoiliceDirectory\filter_dialog.cpp
+CMakeFiles\course.dir\filter_dialog.cpp.obj: CMakeFiles\course.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MSVC2022_64bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/course.dir/filter_dialog.cpp.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\course.dir\filter_dialog.cpp.obj.d --working-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MSVC2022_64bit-Debug --filter-prefix="Примечание: включение файла:  " -- C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\HostX64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\course.dir\filter_dialog.cpp.obj /FdCMakeFiles\course.dir\ /FS -c D:\ACID\dz_4\PoiliceDirectory\filter_dialog.cpp
+<<
+
+CMakeFiles\course.dir\filter_dialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/course.dir/filter_dialog.cpp.i"
+	C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\HostX64\x64\cl.exe > CMakeFiles\course.dir\filter_dialog.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ACID\dz_4\PoiliceDirectory\filter_dialog.cpp
+<<
+
+CMakeFiles\course.dir\filter_dialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/course.dir/filter_dialog.cpp.s"
+	C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\HostX64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\course.dir\filter_dialog.cpp.s /c D:\ACID\dz_4\PoiliceDirectory\filter_dialog.cpp
+<<
+
 # Object files for target course
 course_OBJECTS = \
 "CMakeFiles\course.dir\course_autogen\mocs_compilation.cpp.obj" \
@@ -297,7 +337,9 @@ course_OBJECTS = \
 "CMakeFiles\course.dir\validate_stuctures.cpp.obj" \
 "CMakeFiles\course.dir\show_table_view.cpp.obj" \
 "CMakeFiles\course.dir\investigation_directory.cpp.obj" \
-"CMakeFiles\course.dir\investigation_table_model.cpp.obj"
+"CMakeFiles\course.dir\investigation_table_model.cpp.obj" \
+"CMakeFiles\course.dir\input_investigation_dialog.cpp.obj" \
+"CMakeFiles\course.dir\filter_dialog.cpp.obj"
 
 # External object files for target course
 course_EXTERNAL_OBJECTS =
@@ -313,15 +355,18 @@ course.exe: CMakeFiles\course.dir\validate_stuctures.cpp.obj
 course.exe: CMakeFiles\course.dir\show_table_view.cpp.obj
 course.exe: CMakeFiles\course.dir\investigation_directory.cpp.obj
 course.exe: CMakeFiles\course.dir\investigation_table_model.cpp.obj
+course.exe: CMakeFiles\course.dir\input_investigation_dialog.cpp.obj
+course.exe: CMakeFiles\course.dir\filter_dialog.cpp.obj
 course.exe: CMakeFiles\course.dir\build.make
 course.exe: D:\Qt\6.11.1\msvc2022_64\lib\Qt6Widgetsd.lib
 course.exe: D:\Qt\6.11.1\msvc2022_64\lib\Qt6Guid.lib
 course.exe: D:\Qt\6.11.1\msvc2022_64\lib\Qt6Cored.lib
+course.exe: D:\Qt\6.11.1\msvc2022_64\lib\Qt6EntryPointd.lib
 course.exe: course.exe.manifest
 course.exe: CMakeFiles\course.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MSVC2022_64bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable course.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MSVC2022_64bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable course.exe"
 	D:\Qt\Tools\CMake_64\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\course.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100280~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100280~1.0\x64\mt.exe --manifests course.exe.manifest -- C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1433~1.316\bin\HostX64\x64\link.exe /nologo @CMakeFiles\course.dir\objects1.rsp @<<
- /out:course.exe /implib:course.lib /pdb:D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MSVC2022_64bit-Debug\course.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console /MANIFEST:NO  D:\Qt\6.11.1\msvc2022_64\lib\Qt6Widgetsd.lib D:\Qt\6.11.1\msvc2022_64\lib\Qt6Guid.lib D:\Qt\6.11.1\msvc2022_64\lib\Qt6Cored.lib mpr.lib userenv.lib d3d11.lib dxgi.lib dxguid.lib d3d12.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+ /out:course.exe /implib:course.lib /pdb:D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MSVC2022_64bit-Debug\course.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:windows /MANIFEST:NO  D:\Qt\6.11.1\msvc2022_64\lib\Qt6Widgetsd.lib D:\Qt\6.11.1\msvc2022_64\lib\Qt6Guid.lib D:\Qt\6.11.1\msvc2022_64\lib\Qt6Cored.lib mpr.lib userenv.lib D:\Qt\6.11.1\msvc2022_64\lib\Qt6EntryPointd.lib shell32.lib d3d11.lib dxgi.lib dxguid.lib d3d12.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
 
 # Rule to build all files generated by this target.

@@ -2,6 +2,8 @@
 #include <string>
 #include <sstream>
 #include <stdexcept>
+#include "validate_structures.h"
+#include "QString"
 
 
 bool Date::operator<(const Date& other) const {
@@ -35,7 +37,11 @@ bool Date::operator>=(const Date& other) const {
     return (*this == other) || (*this > other);
 }
 std::ostream& operator<<(std::ostream& os, const Date& date) {
-    os << date.day << " " << month_to_string(date.month) << " " << date.year;
+    if(date.day > 9){
+        os << date.day << " " << month_to_string(date.month) << " " << date.year;
+        return os;
+    }
+    os << "0" << date.day << " " << month_to_string(date.month) << " " << date.year;
     return os;
 }
 
@@ -99,7 +105,7 @@ bool PoliceReport::operator>(const PoliceReport& other) const {
 }
 
 bool PoliceReport::operator==(const PoliceReport& other) const {
-    return report_number == other.report_number && applicant == other.applicant;
+    return report_number == other.report_number && applicant == other.applicant && description == other.description;
 }
 
 bool PoliceReport::operator<=(const PoliceReport& other) const {
@@ -111,7 +117,8 @@ bool PoliceReport::operator>=(const PoliceReport& other) const {
 
 
 bool Investigation::operator==(const Investigation& other) const {
-    return report_number == other.report_number && investigator == other.investigator;
+    return report_number == other.report_number && investigator == other.investigator
+    &&  investigation_status == other.investigation_status && initiation_date == other.initiation_date;
 }
 
 bool Investigation::operator!=(const Investigation& other) const {
@@ -154,19 +161,19 @@ std::string full_name_to_string(const FullName& full_name){
 
 std::string status_to_string(Status status) {
     switch (status) {
-    case Status::active:       return "возбуждено";
-    case Status::under_review: return "на рассмотрении";
-    case Status::on_hold:      return "приостановлено";
-    case Status::closed:       return "закрыто";
-        throw std::runtime_error("Невозможно вывести статус из справочника. Строка повреждена.");
+    case Status::active:       return "Возбуждено";
+    case Status::under_review: return "На рассмотрении";
+    case Status::on_hold:      return "Приостановлено";
+    case Status::closed:       return "Закрыто";
+        throw std::runtime_error("Некорректный статус.");
     }
 }
 
 Status string_to_status(const std::string& str) {
-    if (str == "возбуждено")      return Status::active;
-    if (str == "на рассмотрении") return Status::under_review;
-    if (str == "приостановлено") return Status::on_hold;
-    if (str == "закрыто")         return Status::closed;
+    if (str == "Возбуждено")      return Status::active;
+    if (str == "На рассмотрении") return Status::under_review;
+    if (str == "Приостановлено") return Status::on_hold;
+    if (str == "Закрыто")         return Status::closed;
     throw std::runtime_error("Некорректный статус.");
 }
 
@@ -207,18 +214,25 @@ PoliceReport string_to_report(const std::string& str_report) {
     PoliceReport report;
 
     if (!(ss >> s_number >> report.applicant.surname >> report.applicant.name >> report.applicant.patronymic)) {
-        throw std::runtime_error("Некорректный формат строки заявления");
+        throw std::runtime_error("Некорректный формат строки");
     }
 
     std::getline(ss >> std::ws, report.description);
 
     try {
         int num = std::stoi(s_number);
-        if (num <= 0) throw std::runtime_error("invalid num");
+        if (num <= 0 || num > 9999) throw std::runtime_error("Некорректный номер заявления");
         report.report_number = static_cast<unsigned int>(num);
     } catch (...) {
-        throw std::runtime_error("Invalid number report");
+        throw std::runtime_error("Некорректный номер заявления");
     }
+
+    QString description = QString::fromUtf8(report.description);
+    if(description.length() > 100){
+        throw std::runtime_error("Длина строки превышает 100 символов.");
+    }
+    validate_full_name(report.applicant);
+    std::string description_without_spaces = description.trimmed().toStdString();
 
     return report;
 }
@@ -230,9 +244,7 @@ std::string info_to_string(const Investigation& investigation) {
            investigation.investigator.name + " " +
            investigation.investigator.patronymic + " " +
            status_to_string(investigation.investigation_status) + " " +
-           std::to_string(investigation.initiation_date.day) + " " +
-           month_to_string(investigation.initiation_date.month) + " " +
-           std::to_string(investigation.initiation_date.year);
+           date_to_string(investigation.initiation_date);
 }
 
 std::ostream& operator<<(std::ostream& os, const Investigation& investigation) {
@@ -245,28 +257,31 @@ Investigation string_to_investigation(const std::string& str_investigation) {
     Investigation inv;
 
     if (!(ss >> s_num >> inv.investigator.surname >> inv.investigator.name >> inv.investigator.patronymic)) {
-        throw std::runtime_error("Некорректная структура строки расследования (ФИО)");
+        throw std::runtime_error("Некорректное ФИО");
     }
 
     ss >> s_status;
-    if (s_status == "на") {
+    if (s_status == "На") {
         std::string s_status_part2;
         ss >> s_status_part2;
         s_status += " " + s_status_part2;
     }
 
     if (!(ss >> s_day >> s_month >> s_year)) {
-        throw std::runtime_error("Некорректная структура строки расследования (Дата)");
+        throw std::runtime_error("Некорректная Дата");
     }
 
     try {
         int num = std::stoi(s_num);
-        if (num <= 0) throw std::runtime_error("");
+        if (num <= 0 || num > 9999) throw std::runtime_error("");
         inv.report_number = static_cast<unsigned int>(num);
     } catch (...) { throw std::runtime_error("Некорректный номер заявления"); }
 
     inv.investigation_status = string_to_status(s_status);
 
+    if(s_day.size() != 2){
+        throw std::runtime_error("Некорректная длина поля даты.");
+    }
     try {
         int day = std::stoi(s_day);
         if (day <= 0 || day > 31) throw std::runtime_error("");
@@ -277,9 +292,13 @@ Investigation string_to_investigation(const std::string& str_investigation) {
 
     try {
         int year = std::stoi(s_year);
-        if (year < 2024 || year > 2026) throw std::runtime_error("");
+        if (year < 2024) throw std::runtime_error("");
         inv.initiation_date.year = year;
     } catch (...) { throw std::runtime_error("Некорректный год"); }
+
+    validate_full_name(inv.investigator);
+    QString q_date = QString::fromUtf8(date_to_string(inv.initiation_date));
+    validate_date_string(q_date);
 
     return inv;
 }

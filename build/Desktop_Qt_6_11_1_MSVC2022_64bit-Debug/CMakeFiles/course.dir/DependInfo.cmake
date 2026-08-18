@@ -10,6 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "course_autogen/timestamp" "custom" "course_autogen/deps"
   "D:/ACID/dz_4/PoiliceDirectory/build/Desktop_Qt_6_11_1_MSVC2022_64bit-Debug/course_autogen/mocs_compilation.cpp" "CMakeFiles/course.dir/course_autogen/mocs_compilation.cpp.obj" "msvc" "CMakeFiles/course.dir/course_autogen/mocs_compilation.cpp.obj.d"
+  "D:/ACID/dz_4/PoiliceDirectory/filter_dialog.cpp" "CMakeFiles/course.dir/filter_dialog.cpp.obj" "msvc" "CMakeFiles/course.dir/filter_dialog.cpp.obj.d"
+  "D:/ACID/dz_4/PoiliceDirectory/input_investigation_dialog.cpp" "CMakeFiles/course.dir/input_investigation_dialog.cpp.obj" "msvc" "CMakeFiles/course.dir/input_investigation_dialog.cpp.obj.d"
   "D:/ACID/dz_4/PoiliceDirectory/input_report_dialog.cpp" "CMakeFiles/course.dir/input_report_dialog.cpp.obj" "msvc" "CMakeFiles/course.dir/input_report_dialog.cpp.obj.d"
   "D:/ACID/dz_4/PoiliceDirectory/investigation_directory.cpp" "CMakeFiles/course.dir/investigation_directory.cpp.obj" "msvc" "CMakeFiles/course.dir/investigation_directory.cpp.obj.d"
   "D:/ACID/dz_4/PoiliceDirectory/investigation_table_model.cpp" "CMakeFiles/course.dir/investigation_table_model.cpp.obj" "msvc" "CMakeFiles/course.dir/investigation_table_model.cpp.obj.d"

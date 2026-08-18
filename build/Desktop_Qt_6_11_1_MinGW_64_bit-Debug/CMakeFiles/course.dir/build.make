@@ -105,20 +105,20 @@ CMakeFiles/course.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/course.dir/main.cpp.s"
 	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ACID\dz_4\PoiliceDirectory\main.cpp -o CMakeFiles\course.dir\main.cpp.s
 
-CMakeFiles/course.dir/reportdirectory.cpp.obj: CMakeFiles/course.dir/flags.make
-CMakeFiles/course.dir/reportdirectory.cpp.obj: CMakeFiles/course.dir/includes_CXX.rsp
-CMakeFiles/course.dir/reportdirectory.cpp.obj: D:/ACID/dz_4/PoiliceDirectory/reportdirectory.cpp
-CMakeFiles/course.dir/reportdirectory.cpp.obj: CMakeFiles/course.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/course.dir/reportdirectory.cpp.obj"
-	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/course.dir/reportdirectory.cpp.obj -MF CMakeFiles\course.dir\reportdirectory.cpp.obj.d -o CMakeFiles\course.dir\reportdirectory.cpp.obj -c D:\ACID\dz_4\PoiliceDirectory\reportdirectory.cpp
+CMakeFiles/course.dir/report_directory.cpp.obj: CMakeFiles/course.dir/flags.make
+CMakeFiles/course.dir/report_directory.cpp.obj: CMakeFiles/course.dir/includes_CXX.rsp
+CMakeFiles/course.dir/report_directory.cpp.obj: D:/ACID/dz_4/PoiliceDirectory/report_directory.cpp
+CMakeFiles/course.dir/report_directory.cpp.obj: CMakeFiles/course.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/course.dir/report_directory.cpp.obj"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/course.dir/report_directory.cpp.obj -MF CMakeFiles\course.dir\report_directory.cpp.obj.d -o CMakeFiles\course.dir\report_directory.cpp.obj -c D:\ACID\dz_4\PoiliceDirectory\report_directory.cpp
 
-CMakeFiles/course.dir/reportdirectory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/course.dir/reportdirectory.cpp.i"
-	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ACID\dz_4\PoiliceDirectory\reportdirectory.cpp > CMakeFiles\course.dir\reportdirectory.cpp.i
+CMakeFiles/course.dir/report_directory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/course.dir/report_directory.cpp.i"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ACID\dz_4\PoiliceDirectory\report_directory.cpp > CMakeFiles\course.dir\report_directory.cpp.i
 
-CMakeFiles/course.dir/reportdirectory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/course.dir/reportdirectory.cpp.s"
-	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ACID\dz_4\PoiliceDirectory\reportdirectory.cpp -o CMakeFiles\course.dir\reportdirectory.cpp.s
+CMakeFiles/course.dir/report_directory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/course.dir/report_directory.cpp.s"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ACID\dz_4\PoiliceDirectory\report_directory.cpp -o CMakeFiles\course.dir\report_directory.cpp.s
 
 CMakeFiles/course.dir/structures.cpp.obj: CMakeFiles/course.dir/flags.make
 CMakeFiles/course.dir/structures.cpp.obj: CMakeFiles/course.dir/includes_CXX.rsp
@@ -135,50 +135,50 @@ CMakeFiles/course.dir/structures.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/course.dir/structures.cpp.s"
 	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ACID\dz_4\PoiliceDirectory\structures.cpp -o CMakeFiles\course.dir\structures.cpp.s
 
-CMakeFiles/course.dir/reporttablemodel.cpp.obj: CMakeFiles/course.dir/flags.make
-CMakeFiles/course.dir/reporttablemodel.cpp.obj: CMakeFiles/course.dir/includes_CXX.rsp
-CMakeFiles/course.dir/reporttablemodel.cpp.obj: D:/ACID/dz_4/PoiliceDirectory/reporttablemodel.cpp
-CMakeFiles/course.dir/reporttablemodel.cpp.obj: CMakeFiles/course.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/course.dir/reporttablemodel.cpp.obj"
-	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/course.dir/reporttablemodel.cpp.obj -MF CMakeFiles\course.dir\reporttablemodel.cpp.obj.d -o CMakeFiles\course.dir\reporttablemodel.cpp.obj -c D:\ACID\dz_4\PoiliceDirectory\reporttablemodel.cpp
+CMakeFiles/course.dir/report_table_model.cpp.obj: CMakeFiles/course.dir/flags.make
+CMakeFiles/course.dir/report_table_model.cpp.obj: CMakeFiles/course.dir/includes_CXX.rsp
+CMakeFiles/course.dir/report_table_model.cpp.obj: D:/ACID/dz_4/PoiliceDirectory/report_table_model.cpp
+CMakeFiles/course.dir/report_table_model.cpp.obj: CMakeFiles/course.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/course.dir/report_table_model.cpp.obj"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/course.dir/report_table_model.cpp.obj -MF CMakeFiles\course.dir\report_table_model.cpp.obj.d -o CMakeFiles\course.dir\report_table_model.cpp.obj -c D:\ACID\dz_4\PoiliceDirectory\report_table_model.cpp
 
-CMakeFiles/course.dir/reporttablemodel.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/course.dir/reporttablemodel.cpp.i"
-	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ACID\dz_4\PoiliceDirectory\reporttablemodel.cpp > CMakeFiles\course.dir\reporttablemodel.cpp.i
+CMakeFiles/course.dir/report_table_model.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/course.dir/report_table_model.cpp.i"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ACID\dz_4\PoiliceDirectory\report_table_model.cpp > CMakeFiles\course.dir\report_table_model.cpp.i
 
-CMakeFiles/course.dir/reporttablemodel.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/course.dir/reporttablemodel.cpp.s"
-	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ACID\dz_4\PoiliceDirectory\reporttablemodel.cpp -o CMakeFiles\course.dir\reporttablemodel.cpp.s
+CMakeFiles/course.dir/report_table_model.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/course.dir/report_table_model.cpp.s"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ACID\dz_4\PoiliceDirectory\report_table_model.cpp -o CMakeFiles\course.dir\report_table_model.cpp.s
 
-CMakeFiles/course.dir/inputreportdialog.cpp.obj: CMakeFiles/course.dir/flags.make
-CMakeFiles/course.dir/inputreportdialog.cpp.obj: CMakeFiles/course.dir/includes_CXX.rsp
-CMakeFiles/course.dir/inputreportdialog.cpp.obj: D:/ACID/dz_4/PoiliceDirectory/inputreportdialog.cpp
-CMakeFiles/course.dir/inputreportdialog.cpp.obj: CMakeFiles/course.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/course.dir/inputreportdialog.cpp.obj"
-	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/course.dir/inputreportdialog.cpp.obj -MF CMakeFiles\course.dir\inputreportdialog.cpp.obj.d -o CMakeFiles\course.dir\inputreportdialog.cpp.obj -c D:\ACID\dz_4\PoiliceDirectory\inputreportdialog.cpp
+CMakeFiles/course.dir/input_report_dialog.cpp.obj: CMakeFiles/course.dir/flags.make
+CMakeFiles/course.dir/input_report_dialog.cpp.obj: CMakeFiles/course.dir/includes_CXX.rsp
+CMakeFiles/course.dir/input_report_dialog.cpp.obj: D:/ACID/dz_4/PoiliceDirectory/input_report_dialog.cpp
+CMakeFiles/course.dir/input_report_dialog.cpp.obj: CMakeFiles/course.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/course.dir/input_report_dialog.cpp.obj"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/course.dir/input_report_dialog.cpp.obj -MF CMakeFiles\course.dir\input_report_dialog.cpp.obj.d -o CMakeFiles\course.dir\input_report_dialog.cpp.obj -c D:\ACID\dz_4\PoiliceDirectory\input_report_dialog.cpp
 
-CMakeFiles/course.dir/inputreportdialog.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/course.dir/inputreportdialog.cpp.i"
-	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ACID\dz_4\PoiliceDirectory\inputreportdialog.cpp > CMakeFiles\course.dir\inputreportdialog.cpp.i
+CMakeFiles/course.dir/input_report_dialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/course.dir/input_report_dialog.cpp.i"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ACID\dz_4\PoiliceDirectory\input_report_dialog.cpp > CMakeFiles\course.dir\input_report_dialog.cpp.i
 
-CMakeFiles/course.dir/inputreportdialog.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/course.dir/inputreportdialog.cpp.s"
-	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ACID\dz_4\PoiliceDirectory\inputreportdialog.cpp -o CMakeFiles\course.dir\inputreportdialog.cpp.s
+CMakeFiles/course.dir/input_report_dialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/course.dir/input_report_dialog.cpp.s"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ACID\dz_4\PoiliceDirectory\input_report_dialog.cpp -o CMakeFiles\course.dir\input_report_dialog.cpp.s
 
-CMakeFiles/course.dir/windowshowstructures.cpp.obj: CMakeFiles/course.dir/flags.make
-CMakeFiles/course.dir/windowshowstructures.cpp.obj: CMakeFiles/course.dir/includes_CXX.rsp
-CMakeFiles/course.dir/windowshowstructures.cpp.obj: D:/ACID/dz_4/PoiliceDirectory/windowshowstructures.cpp
-CMakeFiles/course.dir/windowshowstructures.cpp.obj: CMakeFiles/course.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/course.dir/windowshowstructures.cpp.obj"
-	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/course.dir/windowshowstructures.cpp.obj -MF CMakeFiles\course.dir\windowshowstructures.cpp.obj.d -o CMakeFiles\course.dir\windowshowstructures.cpp.obj -c D:\ACID\dz_4\PoiliceDirectory\windowshowstructures.cpp
+CMakeFiles/course.dir/window_show_structures.cpp.obj: CMakeFiles/course.dir/flags.make
+CMakeFiles/course.dir/window_show_structures.cpp.obj: CMakeFiles/course.dir/includes_CXX.rsp
+CMakeFiles/course.dir/window_show_structures.cpp.obj: D:/ACID/dz_4/PoiliceDirectory/window_show_structures.cpp
+CMakeFiles/course.dir/window_show_structures.cpp.obj: CMakeFiles/course.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/course.dir/window_show_structures.cpp.obj"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/course.dir/window_show_structures.cpp.obj -MF CMakeFiles\course.dir\window_show_structures.cpp.obj.d -o CMakeFiles\course.dir\window_show_structures.cpp.obj -c D:\ACID\dz_4\PoiliceDirectory\window_show_structures.cpp
 
-CMakeFiles/course.dir/windowshowstructures.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/course.dir/windowshowstructures.cpp.i"
-	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ACID\dz_4\PoiliceDirectory\windowshowstructures.cpp > CMakeFiles\course.dir\windowshowstructures.cpp.i
+CMakeFiles/course.dir/window_show_structures.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/course.dir/window_show_structures.cpp.i"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ACID\dz_4\PoiliceDirectory\window_show_structures.cpp > CMakeFiles\course.dir\window_show_structures.cpp.i
 
-CMakeFiles/course.dir/windowshowstructures.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/course.dir/windowshowstructures.cpp.s"
-	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ACID\dz_4\PoiliceDirectory\windowshowstructures.cpp -o CMakeFiles\course.dir\windowshowstructures.cpp.s
+CMakeFiles/course.dir/window_show_structures.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/course.dir/window_show_structures.cpp.s"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ACID\dz_4\PoiliceDirectory\window_show_structures.cpp -o CMakeFiles\course.dir\window_show_structures.cpp.s
 
 CMakeFiles/course.dir/validate_stuctures.cpp.obj: CMakeFiles/course.dir/flags.make
 CMakeFiles/course.dir/validate_stuctures.cpp.obj: CMakeFiles/course.dir/includes_CXX.rsp
@@ -195,71 +195,123 @@ CMakeFiles/course.dir/validate_stuctures.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/course.dir/validate_stuctures.cpp.s"
 	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ACID\dz_4\PoiliceDirectory\validate_stuctures.cpp -o CMakeFiles\course.dir\validate_stuctures.cpp.s
 
-CMakeFiles/course.dir/showtableview.cpp.obj: CMakeFiles/course.dir/flags.make
-CMakeFiles/course.dir/showtableview.cpp.obj: CMakeFiles/course.dir/includes_CXX.rsp
-CMakeFiles/course.dir/showtableview.cpp.obj: D:/ACID/dz_4/PoiliceDirectory/showtableview.cpp
-CMakeFiles/course.dir/showtableview.cpp.obj: CMakeFiles/course.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/course.dir/showtableview.cpp.obj"
-	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/course.dir/showtableview.cpp.obj -MF CMakeFiles\course.dir\showtableview.cpp.obj.d -o CMakeFiles\course.dir\showtableview.cpp.obj -c D:\ACID\dz_4\PoiliceDirectory\showtableview.cpp
+CMakeFiles/course.dir/show_table_view.cpp.obj: CMakeFiles/course.dir/flags.make
+CMakeFiles/course.dir/show_table_view.cpp.obj: CMakeFiles/course.dir/includes_CXX.rsp
+CMakeFiles/course.dir/show_table_view.cpp.obj: D:/ACID/dz_4/PoiliceDirectory/show_table_view.cpp
+CMakeFiles/course.dir/show_table_view.cpp.obj: CMakeFiles/course.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/course.dir/show_table_view.cpp.obj"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/course.dir/show_table_view.cpp.obj -MF CMakeFiles\course.dir\show_table_view.cpp.obj.d -o CMakeFiles\course.dir\show_table_view.cpp.obj -c D:\ACID\dz_4\PoiliceDirectory\show_table_view.cpp
 
-CMakeFiles/course.dir/showtableview.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/course.dir/showtableview.cpp.i"
-	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ACID\dz_4\PoiliceDirectory\showtableview.cpp > CMakeFiles\course.dir\showtableview.cpp.i
+CMakeFiles/course.dir/show_table_view.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/course.dir/show_table_view.cpp.i"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ACID\dz_4\PoiliceDirectory\show_table_view.cpp > CMakeFiles\course.dir\show_table_view.cpp.i
 
-CMakeFiles/course.dir/showtableview.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/course.dir/showtableview.cpp.s"
-	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ACID\dz_4\PoiliceDirectory\showtableview.cpp -o CMakeFiles\course.dir\showtableview.cpp.s
+CMakeFiles/course.dir/show_table_view.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/course.dir/show_table_view.cpp.s"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ACID\dz_4\PoiliceDirectory\show_table_view.cpp -o CMakeFiles\course.dir\show_table_view.cpp.s
 
-CMakeFiles/course.dir/investigationdirectory.cpp.obj: CMakeFiles/course.dir/flags.make
-CMakeFiles/course.dir/investigationdirectory.cpp.obj: CMakeFiles/course.dir/includes_CXX.rsp
-CMakeFiles/course.dir/investigationdirectory.cpp.obj: D:/ACID/dz_4/PoiliceDirectory/investigationdirectory.cpp
-CMakeFiles/course.dir/investigationdirectory.cpp.obj: CMakeFiles/course.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/course.dir/investigationdirectory.cpp.obj"
-	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/course.dir/investigationdirectory.cpp.obj -MF CMakeFiles\course.dir\investigationdirectory.cpp.obj.d -o CMakeFiles\course.dir\investigationdirectory.cpp.obj -c D:\ACID\dz_4\PoiliceDirectory\investigationdirectory.cpp
+CMakeFiles/course.dir/investigation_directory.cpp.obj: CMakeFiles/course.dir/flags.make
+CMakeFiles/course.dir/investigation_directory.cpp.obj: CMakeFiles/course.dir/includes_CXX.rsp
+CMakeFiles/course.dir/investigation_directory.cpp.obj: D:/ACID/dz_4/PoiliceDirectory/investigation_directory.cpp
+CMakeFiles/course.dir/investigation_directory.cpp.obj: CMakeFiles/course.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/course.dir/investigation_directory.cpp.obj"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/course.dir/investigation_directory.cpp.obj -MF CMakeFiles\course.dir\investigation_directory.cpp.obj.d -o CMakeFiles\course.dir\investigation_directory.cpp.obj -c D:\ACID\dz_4\PoiliceDirectory\investigation_directory.cpp
 
-CMakeFiles/course.dir/investigationdirectory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/course.dir/investigationdirectory.cpp.i"
-	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ACID\dz_4\PoiliceDirectory\investigationdirectory.cpp > CMakeFiles\course.dir\investigationdirectory.cpp.i
+CMakeFiles/course.dir/investigation_directory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/course.dir/investigation_directory.cpp.i"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ACID\dz_4\PoiliceDirectory\investigation_directory.cpp > CMakeFiles\course.dir\investigation_directory.cpp.i
 
-CMakeFiles/course.dir/investigationdirectory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/course.dir/investigationdirectory.cpp.s"
-	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ACID\dz_4\PoiliceDirectory\investigationdirectory.cpp -o CMakeFiles\course.dir\investigationdirectory.cpp.s
+CMakeFiles/course.dir/investigation_directory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/course.dir/investigation_directory.cpp.s"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ACID\dz_4\PoiliceDirectory\investigation_directory.cpp -o CMakeFiles\course.dir\investigation_directory.cpp.s
+
+CMakeFiles/course.dir/investigation_table_model.cpp.obj: CMakeFiles/course.dir/flags.make
+CMakeFiles/course.dir/investigation_table_model.cpp.obj: CMakeFiles/course.dir/includes_CXX.rsp
+CMakeFiles/course.dir/investigation_table_model.cpp.obj: D:/ACID/dz_4/PoiliceDirectory/investigation_table_model.cpp
+CMakeFiles/course.dir/investigation_table_model.cpp.obj: CMakeFiles/course.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/course.dir/investigation_table_model.cpp.obj"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/course.dir/investigation_table_model.cpp.obj -MF CMakeFiles\course.dir\investigation_table_model.cpp.obj.d -o CMakeFiles\course.dir\investigation_table_model.cpp.obj -c D:\ACID\dz_4\PoiliceDirectory\investigation_table_model.cpp
+
+CMakeFiles/course.dir/investigation_table_model.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/course.dir/investigation_table_model.cpp.i"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ACID\dz_4\PoiliceDirectory\investigation_table_model.cpp > CMakeFiles\course.dir\investigation_table_model.cpp.i
+
+CMakeFiles/course.dir/investigation_table_model.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/course.dir/investigation_table_model.cpp.s"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ACID\dz_4\PoiliceDirectory\investigation_table_model.cpp -o CMakeFiles\course.dir\investigation_table_model.cpp.s
+
+CMakeFiles/course.dir/input_investigation_dialog.cpp.obj: CMakeFiles/course.dir/flags.make
+CMakeFiles/course.dir/input_investigation_dialog.cpp.obj: CMakeFiles/course.dir/includes_CXX.rsp
+CMakeFiles/course.dir/input_investigation_dialog.cpp.obj: D:/ACID/dz_4/PoiliceDirectory/input_investigation_dialog.cpp
+CMakeFiles/course.dir/input_investigation_dialog.cpp.obj: CMakeFiles/course.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/course.dir/input_investigation_dialog.cpp.obj"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/course.dir/input_investigation_dialog.cpp.obj -MF CMakeFiles\course.dir\input_investigation_dialog.cpp.obj.d -o CMakeFiles\course.dir\input_investigation_dialog.cpp.obj -c D:\ACID\dz_4\PoiliceDirectory\input_investigation_dialog.cpp
+
+CMakeFiles/course.dir/input_investigation_dialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/course.dir/input_investigation_dialog.cpp.i"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ACID\dz_4\PoiliceDirectory\input_investigation_dialog.cpp > CMakeFiles\course.dir\input_investigation_dialog.cpp.i
+
+CMakeFiles/course.dir/input_investigation_dialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/course.dir/input_investigation_dialog.cpp.s"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ACID\dz_4\PoiliceDirectory\input_investigation_dialog.cpp -o CMakeFiles\course.dir\input_investigation_dialog.cpp.s
+
+CMakeFiles/course.dir/filter_dialog.cpp.obj: CMakeFiles/course.dir/flags.make
+CMakeFiles/course.dir/filter_dialog.cpp.obj: CMakeFiles/course.dir/includes_CXX.rsp
+CMakeFiles/course.dir/filter_dialog.cpp.obj: D:/ACID/dz_4/PoiliceDirectory/filter_dialog.cpp
+CMakeFiles/course.dir/filter_dialog.cpp.obj: CMakeFiles/course.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/course.dir/filter_dialog.cpp.obj"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/course.dir/filter_dialog.cpp.obj -MF CMakeFiles\course.dir\filter_dialog.cpp.obj.d -o CMakeFiles\course.dir\filter_dialog.cpp.obj -c D:\ACID\dz_4\PoiliceDirectory\filter_dialog.cpp
+
+CMakeFiles/course.dir/filter_dialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/course.dir/filter_dialog.cpp.i"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ACID\dz_4\PoiliceDirectory\filter_dialog.cpp > CMakeFiles\course.dir\filter_dialog.cpp.i
+
+CMakeFiles/course.dir/filter_dialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/course.dir/filter_dialog.cpp.s"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ACID\dz_4\PoiliceDirectory\filter_dialog.cpp -o CMakeFiles\course.dir\filter_dialog.cpp.s
 
 # Object files for target course
 course_OBJECTS = \
 "CMakeFiles/course.dir/course_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/course.dir/main.cpp.obj" \
-"CMakeFiles/course.dir/reportdirectory.cpp.obj" \
+"CMakeFiles/course.dir/report_directory.cpp.obj" \
 "CMakeFiles/course.dir/structures.cpp.obj" \
-"CMakeFiles/course.dir/reporttablemodel.cpp.obj" \
-"CMakeFiles/course.dir/inputreportdialog.cpp.obj" \
-"CMakeFiles/course.dir/windowshowstructures.cpp.obj" \
+"CMakeFiles/course.dir/report_table_model.cpp.obj" \
+"CMakeFiles/course.dir/input_report_dialog.cpp.obj" \
+"CMakeFiles/course.dir/window_show_structures.cpp.obj" \
 "CMakeFiles/course.dir/validate_stuctures.cpp.obj" \
-"CMakeFiles/course.dir/showtableview.cpp.obj" \
-"CMakeFiles/course.dir/investigationdirectory.cpp.obj"
+"CMakeFiles/course.dir/show_table_view.cpp.obj" \
+"CMakeFiles/course.dir/investigation_directory.cpp.obj" \
+"CMakeFiles/course.dir/investigation_table_model.cpp.obj" \
+"CMakeFiles/course.dir/input_investigation_dialog.cpp.obj" \
+"CMakeFiles/course.dir/filter_dialog.cpp.obj"
 
 # External object files for target course
 course_EXTERNAL_OBJECTS =
 
 course.exe: CMakeFiles/course.dir/course_autogen/mocs_compilation.cpp.obj
 course.exe: CMakeFiles/course.dir/main.cpp.obj
-course.exe: CMakeFiles/course.dir/reportdirectory.cpp.obj
+course.exe: CMakeFiles/course.dir/report_directory.cpp.obj
 course.exe: CMakeFiles/course.dir/structures.cpp.obj
-course.exe: CMakeFiles/course.dir/reporttablemodel.cpp.obj
-course.exe: CMakeFiles/course.dir/inputreportdialog.cpp.obj
-course.exe: CMakeFiles/course.dir/windowshowstructures.cpp.obj
+course.exe: CMakeFiles/course.dir/report_table_model.cpp.obj
+course.exe: CMakeFiles/course.dir/input_report_dialog.cpp.obj
+course.exe: CMakeFiles/course.dir/window_show_structures.cpp.obj
 course.exe: CMakeFiles/course.dir/validate_stuctures.cpp.obj
-course.exe: CMakeFiles/course.dir/showtableview.cpp.obj
-course.exe: CMakeFiles/course.dir/investigationdirectory.cpp.obj
+course.exe: CMakeFiles/course.dir/show_table_view.cpp.obj
+course.exe: CMakeFiles/course.dir/investigation_directory.cpp.obj
+course.exe: CMakeFiles/course.dir/investigation_table_model.cpp.obj
+course.exe: CMakeFiles/course.dir/input_investigation_dialog.cpp.obj
+course.exe: CMakeFiles/course.dir/filter_dialog.cpp.obj
 course.exe: CMakeFiles/course.dir/build.make
 course.exe: D:/Qt/6.11.1/mingw_64/lib/libQt6Widgets.a
 course.exe: D:/Qt/6.11.1/mingw_64/lib/libQt6Gui.a
 course.exe: D:/Qt/6.11.1/mingw_64/lib/libQt6Core.a
+course.exe: D:/Qt/6.11.1/mingw_64/lib/libQt6EntryPoint.a
 course.exe: course.exe.manifest
 course.exe: CMakeFiles/course.dir/linkLibs.rsp
 course.exe: CMakeFiles/course.dir/objects1.rsp
 course.exe: CMakeFiles/course.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable course.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\ACID\dz_4\PoiliceDirectory\build\Desktop_Qt_6_11_1_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable course.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\course.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

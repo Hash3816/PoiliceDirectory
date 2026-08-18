@@ -27,7 +27,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
 
         report_directory.h report_directory.cpp report_directory.ui
         hash_table/DataManagerHashTable.h hash_table/hash_table.h hash_table/IHashTableIndex.h hash_table/IHashTableManager.h tree/DataManagerTree.h tree/I_tree.h tree/IDataManagerTree.h tree/rb_tree.h
-        DataService.h DynamicArray.h
+        DataService.h StaticArray.h
         IStorage.h list.h Pair.h report_directory.h structures.h
         structures.cpp
         report_table_model.h
@@ -40,6 +40,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         investigation_directory.h investigation_directory.cpp investigation_directory.ui
         investigation_table_model.h
         investigation_table_model.cpp
+        input_investigation_dialog.h input_investigation_dialog.cpp input_investigation_dialog.ui
+        filter_dialog.h filter_dialog.cpp filter_dialog.ui
+
 
     )
 # Define target properties for Android with Qt 6 as:
@@ -54,7 +57,7 @@ else()
 # Define properties for Android with Qt 5 after find_package() calls as:
 #    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
     else()
-        add_executable(course
+        add_executable(course WIN32
             ${PROJECT_SOURCES}
         )
     endif()
@@ -73,7 +76,7 @@ set_target_properties(course PROPERTIES
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
     MACOSX_BUNDLE TRUE
-    #WIN32_EXECUTABLE TRUE
+    WIN32_EXECUTABLE TRUE
 )
 
 include(GNUInstallDirs)

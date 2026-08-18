@@ -27,17 +27,28 @@ public:
     }
 
     void append(const Investigation& info) override{
-        storage_info->push_back(info);
-        tree->insert(info.report_number, storage_info->get_size() - 1);
-        tree_dates->insert(info.initiation_date, storage_info->get_size() - 1);
+        auto steps_and_list = tree->find(info.report_number);
+
+        if(steps_and_list.first != 0){
+            for(unsigned int index: steps_and_list.second){
+                if(info == storage_info->get_element(index)){
+                    throw std::runtime_error("Невозможно добавить следствие\n"
+                    "которое по всем информационным полям соответствует существующему в массиве следствию.");
+                }
+            }
+        }
+
+         storage_info->push_back(info);
+         tree->insert(info.report_number, storage_info->get_size() - 1);
+         tree_dates->insert(info.initiation_date, storage_info->get_size() - 1);
 	}
 
     void erase(const Investigation& info, const unsigned int& index) override{
         if (index < 0 || index > storage_info->get_size() - 1) {
-			throw std::runtime_error("index out of range");
+            throw std::runtime_error("Индекс находится за пределами массива.");
 		}
         if (storage_info->get_element(index) != info) {
-			throw std::runtime_error("invalid index");
+            throw std::runtime_error("Некорректный индекс.");
 		}
 
         tree->erase(info.report_number, index);
@@ -67,14 +78,14 @@ public:
 
 		input.open(path);
 		if (!input.is_open()) {
-			throw std::runtime_error("cannot open(create) file");
+            throw std::runtime_error("Ошибка при открытии файла.");
 		}
 
 		int number_rows;
 		input >> number_rows;
 		input.get();
         if(input.fail()){
-            throw std::runtime_error("invalid number rows");
+            throw std::runtime_error("Файл повреждён.");
         }
 		std::string info_user_s;
 		for (int i = 0; i < number_rows; i++) {
@@ -88,7 +99,7 @@ public:
 	void write_index_structure_in_file(const std::string& path) const override{
 		std::ofstream output(path);
 		if (!output.is_open()) {
-			throw std::runtime_error("cannot open(create) file");
+            throw std::runtime_error("Ошибка при открытии файла.");
 		}
 
         output << tree->to_str();
@@ -98,7 +109,7 @@ public:
 	void write_storage_in_file(const std::string& path) const override{
 		std::ofstream output(path);
 		if (!output.is_open()) {
-			throw std::runtime_error("cannot open(create) file");
+            throw std::runtime_error("Ошибка при открытии файла.");
 		}
 
         output << storage_info->get_size() << "\n";

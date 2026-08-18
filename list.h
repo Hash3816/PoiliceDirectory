@@ -13,24 +13,6 @@ private:
 
     Node* head;
 
-    void push_back(const T& value) {
-        Node* new_node = new Node;
-        new_node->value = value;
-
-        if (head == nullptr) {
-            new_node->prev = new_node;
-            new_node->next = new_node;
-            head = new_node;
-
-            return;
-        }
-
-        new_node->prev = head->prev;
-        new_node->next = head;
-        head->prev->next = new_node;
-        head->prev = new_node;
-    }
-
 public:
 
     List() : head(nullptr) {};
@@ -50,14 +32,14 @@ public:
 
         const T& operator*() const {
             if (head_ref == nullptr) {
-                throw std::runtime_error("cannot get value, list is empty");
+                throw std::runtime_error("Невозможно получить значение, список пуст.");
             }
             return current->value;
         }
 
         ForwardIterator& operator++() {
             if (head_ref == nullptr) {
-                throw std::runtime_error("iteration impossible, list is empty");
+                throw std::runtime_error("Переход на следующий узел невозможен, список пуст.");
             }
             current = current->next;
             if (current == head_ref) {
@@ -68,7 +50,7 @@ public:
 
         ForwardIterator operator++(int) {
             if (head_ref == nullptr) {
-                throw std::runtime_error("iteration impossible, list is empty");
+                throw std::runtime_error("Переход на следующий узел невозможен, список пуст.");
             }
             ForwardIterator temp = *this;
             ++(*this);
@@ -131,12 +113,12 @@ public:
         return;
     }
 
-    const T& get_element(int index)const{
+    const T& get_element(int index) const{
         if(index < 0){
-            throw std::runtime_error("invalid index");
+            throw std::runtime_error("invalid index.");
         }
         if(head == nullptr){
-            throw std::runtime_error("empty list");
+            throw std::runtime_error("empty list.");
         }
         if(index == 0){
             return head->value;
@@ -150,7 +132,7 @@ public:
         }
 
         if(i != index || current_node == head){
-            throw std::runtime_error("invalid index");
+            throw std::runtime_error("invalid index.");
         }
 
         return current_node->value;
@@ -158,7 +140,7 @@ public:
 
     void del_by_value(const T& value) {
         if (head == nullptr) {
-            throw std::runtime_error("empty list");
+            throw std::runtime_error("empty list.");
         }
 
         Node* current_node = head->next;
@@ -188,58 +170,6 @@ public:
             head = head->next;
             delete temp;
         }
-    }
-
-    void del_first_entry(const T& value) {
-        if (head == nullptr) {
-            throw std::runtime_error("empty list");
-        }
-
-        if (head->value == value && head->next == head) {
-            delete head;
-            head = nullptr;
-            return;
-        }
-
-        if (head->value == value) {
-            head->prev->next = head->next;
-            head->next->prev = head->prev;
-
-            Node* temp = head;
-            head = head->next;
-            delete temp;
-            return;
-        }
-
-        Node* current_node = head;
-        current_node = current_node->next;
-        while (current_node != head) {
-            if (current_node->value == value) {
-                current_node->prev->next = current_node->next;
-                current_node->next->prev = current_node->prev;
-
-                delete current_node;
-                return;
-            }
-            current_node = current_node->next;
-        }
-        throw std::runtime_error("not found value in list");
-    }
-
-    void pop_back() {
-        if (head == nullptr) {
-            throw std::runtime_error("empty list");
-        }
-        if (head == head->next) {
-            delete head;
-            head = nullptr;
-            return;
-        }
-
-        Node* del_node = head->prev;
-        del_node->prev->next = head;
-        head->prev = del_node->prev;
-        delete del_node;
     }
 
     bool empty() const {

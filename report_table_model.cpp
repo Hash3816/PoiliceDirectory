@@ -20,7 +20,7 @@ int ReportTableModel::columnCount(const QModelIndex &parent) const
 
 QVariant ReportTableModel::data(const QModelIndex &index, int role) const
 {
-    if (!index.isValid() || role != Qt::DisplayRole) {
+    if ((!index.isValid()) || (role != Qt::DisplayRole)) {
         return QVariant();
     }
 

@@ -10,7 +10,7 @@ public:
 	virtual void pop_back() = 0;
 	virtual void erase(int index) = 0;
 	virtual void insert(const Info& info, int index) = 0;
-    virtual const unsigned int get_size() const  = 0;
+    virtual unsigned int get_size() const  = 0;
     virtual const Info& get_element(int index) const = 0;
 	virtual void change(const Info& info, int index) = 0;
     virtual bool empty() const = 0;

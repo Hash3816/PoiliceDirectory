@@ -11,7 +11,9 @@ ShowTableView::ShowTableView(QWidget *parent)
     model = new QStandardItemModel(0, 1, this);
     model->setHorizontalHeaderLabels({" "});
     ui->tableView->setModel(model);
+    model->setRowCount(0);
     ui->tableView->horizontalHeader()->setStretchLastSection(true);
+    ui->tableView->verticalHeader()->setVisible(false);
 }
 
 ShowTableView::~ShowTableView()
@@ -44,12 +46,16 @@ void ShowTableView::set_find_report(const std::reference_wrapper<const PoliceRep
 
 void ShowTableView::set_find_investigations(const std::vector<std::reference_wrapper<const Investigation>>& data_find_investigations)
 {
+    ui->TextAboutTable->setText("Найденные следствия");
     model->setColumnCount(4);
-    model->setHorizontalHeaderLabels({"Номер заявления", "ФИО следователя", "Статус", "Дата"});
+    model->setRowCount(0);
+
+    model->setHorizontalHeaderLabels({"Номер заявления", "ФИО следователя", "Статус", "Дата возбуждения"});
+     ui->tableView->setColumnWidth(0, 120);
+     ui->tableView->setColumnWidth(1, 200);
+     ui->tableView->setColumnWidth(2, 120);
 
     for(unsigned int i = 0; i < data_find_investigations.size(); i++){
-        model->setRowCount(data_find_investigations.size());
-
         QString report_number = QString::number(data_find_investigations[i].get().report_number);
         QString full_name = QString::fromUtf8(full_name_to_string(data_find_investigations[i].get().investigator));
         QString status = QString::fromUtf8(status_to_string(data_find_investigations[i].get().investigation_status));
@@ -65,13 +71,17 @@ void ShowTableView::set_find_investigations(const std::vector<std::reference_wra
 }
 
 void ShowTableView::set_filtered_data(const std::vector<Pair<const PoliceReport&, const Investigation&>>& filtered_data){
+    ui->TextAboutTable->setText("Отчёт");
+    model->setRowCount(0);
     model->setColumnCount(6);
     model->setHorizontalHeaderLabels({"Номер заявления", "ФИО заявителя", "Описание", "ФИО следователя", "Статус", "Дата возбуждения"});
+    ui->tableView->setColumnWidth(0, 120);
+    ui->tableView->setColumnWidth(1, 200);
+    ui->tableView->setColumnWidth(2, 200);
+    ui->tableView->setColumnWidth(3, 200);
+    ui->tableView->setColumnWidth(4, 120);
 
     for(unsigned int i = 0; i < filtered_data.size(); i++){
-        model->setRowCount(filtered_data.size());
-
-
         QString find_report_number = QString::number(filtered_data[i].first.report_number);
         QString find_full_name_applicant = QString::fromUtf8(full_name_to_string(filtered_data[i].first.applicant));
         QString find_description = QString::fromUtf8(filtered_data[i].first.description);

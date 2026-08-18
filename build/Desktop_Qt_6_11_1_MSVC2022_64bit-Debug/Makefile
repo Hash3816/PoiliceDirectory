@@ -201,6 +201,54 @@ course_autogen\mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\course.dir\course_autogen\mocs_compilation.cpp.s
 .PHONY : course_autogen\mocs_compilation.cpp.s
 
+filter_dialog.obj: filter_dialog.cpp.obj
+.PHONY : filter_dialog.obj
+
+# target to build an object file
+filter_dialog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\course.dir\filter_dialog.cpp.obj
+.PHONY : filter_dialog.cpp.obj
+
+filter_dialog.i: filter_dialog.cpp.i
+.PHONY : filter_dialog.i
+
+# target to preprocess a source file
+filter_dialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\course.dir\filter_dialog.cpp.i
+.PHONY : filter_dialog.cpp.i
+
+filter_dialog.s: filter_dialog.cpp.s
+.PHONY : filter_dialog.s
+
+# target to generate assembly for a file
+filter_dialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\course.dir\filter_dialog.cpp.s
+.PHONY : filter_dialog.cpp.s
+
+input_investigation_dialog.obj: input_investigation_dialog.cpp.obj
+.PHONY : input_investigation_dialog.obj
+
+# target to build an object file
+input_investigation_dialog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\course.dir\input_investigation_dialog.cpp.obj
+.PHONY : input_investigation_dialog.cpp.obj
+
+input_investigation_dialog.i: input_investigation_dialog.cpp.i
+.PHONY : input_investigation_dialog.i
+
+# target to preprocess a source file
+input_investigation_dialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\course.dir\input_investigation_dialog.cpp.i
+.PHONY : input_investigation_dialog.cpp.i
+
+input_investigation_dialog.s: input_investigation_dialog.cpp.s
+.PHONY : input_investigation_dialog.s
+
+# target to generate assembly for a file
+input_investigation_dialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\course.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\course.dir\input_investigation_dialog.cpp.s
+.PHONY : input_investigation_dialog.cpp.s
+
 input_report_dialog.obj: input_report_dialog.cpp.obj
 .PHONY : input_report_dialog.obj
 
@@ -458,6 +506,12 @@ help:
 	@echo ... course_autogen/mocs_compilation.obj
 	@echo ... course_autogen/mocs_compilation.i
 	@echo ... course_autogen/mocs_compilation.s
+	@echo ... filter_dialog.obj
+	@echo ... filter_dialog.i
+	@echo ... filter_dialog.s
+	@echo ... input_investigation_dialog.obj
+	@echo ... input_investigation_dialog.i
+	@echo ... input_investigation_dialog.s
 	@echo ... input_report_dialog.obj
 	@echo ... input_report_dialog.i
 	@echo ... input_report_dialog.s

@@ -47,6 +47,6 @@ int main(int argc, char *argv[])
     window2.setWindowTitle("Справочник следствий");
     window.show();
     window2.show();
+
     return QApplication::exec();
 }
-

@@ -14,4 +14,5 @@ public:
     virtual std::string to_str() const = 0;
     virtual void clear() = 0;
     virtual void set_capacity(unsigned int n) = 0;
+    virtual unsigned int get_hash(const Key& key) const = 0;
 };

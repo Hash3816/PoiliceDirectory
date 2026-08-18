@@ -31,15 +31,20 @@ private slots:
     void on_actionLoadDirectoryInvestigation_triggered();
     void on_actionSaveDirectoryInvestigation_triggered();
     void on_actionAddInvestigation_triggered();
+    void on_actionDeleteInvestigation_triggered();
 
     void on_actionFindInvestigationsByNumber_triggered();
-    //Сформировать отчёт
+
+    void on_actionEraseDirectory_triggered();
     //Удалить следствие
-    //Отчистить сделователей(добавить конпку в ui)
+    void on_actionFilter_triggered();
     void on_actionPrintStructures_triggered();
     void on_actionPrintRBTreeReportsNumbers_triggered();
     void on_actionPrintRBTreeDates_triggered();
     void on_actionPrintInvestigations_triggered();
+
+    void mousePressEvent(QMouseEvent *event) override;
+
 };
 
 #endif // INVESTIGATION_DIRECTORY_H

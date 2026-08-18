@@ -53,7 +53,7 @@ QVariant InvestigationTableModel::headerData(int section, Qt::Orientation orient
     if (orientation == Qt::Horizontal) {
         switch (section) {
         case 0: return "Номер заявления";
-        case 1: return "ФИО Следователя";
+        case 1: return "ФИО следователя";
         case 2: return "Статус";
         case 3: return "Дата возбуждения";
         default: return QVariant();

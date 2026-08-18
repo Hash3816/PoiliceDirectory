@@ -8,19 +8,16 @@ InputReportDialog::InputReportDialog(QWidget *parent) :
     ui(new Ui::InputReportDialog)
 {
     ui->setupUi(this);
+    ui->DescriptionTextEdit->installEventFilter(this);
+
     QRegularExpression russianRegex("^[а-яА-ЯёЁ-]+$");
-    QIntValidator *numberValidator = new QIntValidator(1, 1000, this);
-    QRegularExpressionValidator *nameValidator = new QRegularExpressionValidator(russianRegex, this);
+    QIntValidator* numberValidator = new QIntValidator(1, 9999, this);
+    QRegularExpressionValidator* nameValidator = new QRegularExpressionValidator(russianRegex, this);
+
     ui->NumberReportEditLine->setValidator(numberValidator);
     ui->SurnameEditLine->setValidator(nameValidator);
     ui->NameEditLine->setValidator(nameValidator);
     ui->PatronymicEditLine->setValidator(nameValidator);
-
-    ui->NumberReportEditLine->setMaxLength(4);
-    ui->SurnameEditLine->setMaxLength(50);
-    ui->NameEditLine->setMaxLength(50);
-    ui->PatronymicEditLine->setMaxLength(50);
-    ui->NumberReportEditLine->setMaxLength(4);
 
     connect(ui->AddReportButton, &QPushButton::clicked, this, &QDialog::accept);
     connect(ui->CanelButton, &QPushButton::clicked, this, &QDialog::reject);
@@ -33,27 +30,40 @@ InputReportDialog::~InputReportDialog()
 
 void InputReportDialog::on_DescriptionTextEdit_textChanged()
 {
-    const int MAX_LENGTH = 100; // Твой лимит символов
+    const int MAX_LENGTH = 100;
+    QString currentText = ui->DescriptionTextEdit->toPlainText();
 
-    // 1. Проверяем, превысил ли пользователь лимит
-    if (ui->DescriptionTextEdit->toPlainText().length() > MAX_LENGTH) {
-
-        // 2.временно отключаем сигналы виджета.
+    // 1. Проверяем, если текст превысил лимит
+    if (currentText.length() > MAX_LENGTH) {
         ui->DescriptionTextEdit->blockSignals(true);
 
-        // 3. Забираем текст, обрезаем ровно до лимита
-        QString text = ui->DescriptionTextEdit->toPlainText();
-        text.truncate(MAX_LENGTH);
+        // Получаем активный курсор
+        QTextCursor cursor = ui->DescriptionTextEdit->textCursor();
 
-        ui->DescriptionTextEdit->setPlainText(text);
+        // Вычисляем, сколько символов нужно удалить (если скопировали и вставили сразу много)
+        int extraChars = currentText.length() - MAX_LENGTH;
+
+        // Удаляем ровно лишнее количество символов перед курсором
+        for (int i = 0; i < extraChars; ++i) {
+            cursor.deletePreviousChar();
+        }
+
+        ui->DescriptionTextEdit->blockSignals(false);
+    }
+
+    // 2. Отдельно проверяем запрет на перевод строки (если он все еще нужен)
+    // Обновляем строку, так как она могла измениться выше
+    currentText = ui->DescriptionTextEdit->toPlainText();
+    if (!currentText.isEmpty() && currentText.endsWith('\n')) {
+        ui->DescriptionTextEdit->blockSignals(true);
 
         QTextCursor cursor = ui->DescriptionTextEdit->textCursor();
-        cursor.movePosition(QTextCursor::End);
-        ui->DescriptionTextEdit->setTextCursor(cursor);
+        cursor.deletePreviousChar(); // Просто стираем нажатый Enter
 
         ui->DescriptionTextEdit->blockSignals(false);
     }
 }
+
 
 int InputReportDialog::getNumberReport() const {
     return ui->NumberReportEditLine->text().toInt();
